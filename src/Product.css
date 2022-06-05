@@ -7,12 +7,12 @@
     background-color: white;
   }
   /*#container{
-  }*/
+    }*/
   
   h1 {
     color: antiquewhite;
     font-weight: bold;
-  }
+  }  
   nav {
     height: 80px;
     padding-left: 100px;
@@ -26,14 +26,13 @@
     font-size: 33px;
     color: #fff;
     font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+
   }
-  .head1{color: #9fafff; font-size: 50px; font-weight: bold; padding-right: 1rem; margin-left: 150px; padding-top: 200px;}
+  .head1{color: #9fafff; font-size: 100px; font-weight: bold;  padding-top: 20px; text-align: center;}
   ul {
     padding-top: 10px;
-  }
-  a{
-      text-decoration: none;
-      color:white ;
   }
   
   .btn-nav {
@@ -46,13 +45,17 @@
     transition: all 0.8s ease;
     margin-top: 500px;
   }
-  .btn-1{
-      background-color: #28285c;
-      color: #fff;
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  .btn-1 {
+    background-color: #28285c;
+    color: #fff;
   }
   .btn-nav:hover,
-  .active:hover{
-      color: black;
+  .active:hover {
+    color: black;
   }
   
   .btn-nav:hover,
@@ -69,7 +72,7 @@
   #click {
     display: none;
   }
-  @media (max-width: 1087px) {
+  @media (max-width: 940px) {
     nav .menu-btn {
       display: block;
     }
@@ -97,46 +100,31 @@
     display: block;
     text-align: center;
   }
-    .head1{
-        font-size: 6000px;
-    }
-    .head1{
-      font-size: 50px;
-      padding-top: 0%;
-      text-align: center;
-      margin: 20px;
-  }
-  
-  }
-  
-  .contact-form{
-    background: #fff;
-    margin-top: 2%;
-    width: 40%;
-}
-.contact-form .form-control{
-    border-radius:1rem;
-}
-.contact-image{
+  .head1{
+    font-size: 50px;
+    padding-top: 0%;
     text-align: center;
+    margin: 20px;
 }
-.contact-image img{
-    border-radius: 6rem;
-    width: 11%;
-    margin-top: -3%;
-    transform: rotate(29deg);
+  }
+.read-more-container{
+    display: flex;
+    flex-direction: column;
+    color: black;
 }
-.contact-form form{
-    padding: 8%;
+.container{
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 2px;
+    line-height: 1.4rem;
+    box-shadow: 0 0 1rem rgba(0,0,0,.1);
 }
-.submitbtn{
-    background-color: #28285c;
-    color: #fff;
+.read-more-btn{
+    color: blue;
 }
-hr.style-one{
-    height: 5px;
-    background-color: #28285c;
-    border-radius: 5px;
-    
-
+.read-more-text{
+    display: none;
+}
+.read-more-text--show{
+    display: inline;
 }

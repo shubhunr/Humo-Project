@@ -30,6 +30,7 @@ nav .logo {
 ul {
   padding-top: 10px;
 }
+.head1{color: #9fafff; font-size: 100px; font-weight: bold;  padding-top: 20px; text-align: center;}
 
 .btn-nav {
   color: #fff;
@@ -78,8 +79,8 @@ nav .menu-btn {
   nav ul {
     position: fixed;
     top: 80px;
-    left: -1000px;
-    background-color: black;
+    left: -100%;
+    background-color: #fff;
     height: 100vh;
     width: 100%;
 
@@ -90,12 +91,15 @@ nav .menu-btn {
     left: 0%;
   }
   .btn-nav {
-    margin: 15px 300px;
-    background-color: orangered;
+    margin: 40px 100px;
+    background-color: #28285c;
     display: block;
     text-align: center;
   }
-  .head1 {
-    font-size: 6000px;
+  .head1{
+    font-size: 50px;
+    padding-top: 0%;
+    text-align: center;
+    margin: 20px;
   }
 }
