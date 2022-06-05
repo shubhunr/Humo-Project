@@ -31,7 +31,6 @@ ul {
   padding-top: 10px;
 }
 
-
 .btn-nav {
   color: #fff;
   font-size: 18px;
@@ -42,38 +41,38 @@ ul {
   transition: all 0.8s ease;
   margin-top: 500px;
 }
-a{
-    text-decoration: none;
-    color:white ;
+a {
+  text-decoration: none;
+  color: white;
 }
-.btn-0{
-    background-color: #fff;
+.btn-0 {
+  background-color: #fff;
 }
-.btn-1{
-    background-color: #28285c;
-    color: #fff;
-    margin-top: 80px;
-    margin-left: 850px;
+.btn-1 {
+  background-color: #28285c;
+  color: #fff;
+  margin-top: 80px;
+  margin-left: 850px;
 }
-.gif0{
-    width: 40%;
-    float: right;
+.gif0 {
+  width: 40%;
+  float: right;
 }
-.gif1{
-    padding-top:212px;
-    padding-left:150px;
+.gif1 {
+  padding-top: 212px;
+  padding-left: 150px;
 }
 
-.img-fluid{
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    position: relative;
-    bottom: 0px;
+.img-fluid {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  position: relative;
+  bottom: 0px;
 }
 .btn-nav:hover,
-.active:hover{
-    color: black;
+.active:hover {
+  color: black;
 }
 
 .btn-nav:hover,
@@ -90,25 +89,25 @@ nav .menu-btn {
 #click {
   display: none;
 }
-.intro{
-    width: 60%;
-    float: left;
+.intro {
+  width: 60%;
+  float: left;
 }
-.head1{
-    color: #9fafff;
-    font-size: 100px;
-    font-weight: bold;
-    padding-right: 1rem;
-    margin-left: 150px;
-    padding-top: 235px;
+.head1 {
+  color: #9fafff;
+  font-size: 100px;
+  font-weight: bold;
+  padding-right: 1rem;
+  margin-left: 150px;
+  padding-top: 235px;
 }
-.head2{
-    color: #cfd7ff;
-    font-size: 48px;
-    font-weight:500;
-    margin-left: 700px;
+.head2 {
+  color: #cfd7ff;
+  font-size: 48px;
+  font-weight: 500;
+  margin-left: 700px;
 }
-@media (max-width: 940px) {
+@media (max-width: 1087px) {
   nav .menu-btn {
     display: block;
   }
@@ -126,7 +125,7 @@ nav .menu-btn {
     text-align: center;
     transition: all 0.3s ease;
   }
-  .btn-nav{
+  .btn-nav {
     margin: 40px 0;
   }
   #click:checked ~ ul {
@@ -138,45 +137,40 @@ nav .menu-btn {
     display: block;
     text-align: center;
   }
-  .intro{
-      width: 100%;
-  }
-  .head1{
-      font-size: 50px;
-      padding-top: 0%;
-      text-align: center;
-      margin: 20px;
-  }
-  .head2{
-      text-align: center;
-      margin: 20px;
-  }
-  .btn-0{
-      text-align: center;
-      
-      
-  }
-  .btn-1{
-      text-align: center;
-      margin-left: 0px;
-  }
-  .gif0{ 
+  .intro {
     width: 100%;
-    position:absolute;
+  }
+  .head1 {
+    font-size: 50px;
+    padding-top: 0%;
+    text-align: center;
+    margin: 20px;
+  }
+  .head2 {
+    text-align: center;
+    margin: 20px;
+  }
+  .btn-0 {
+    text-align: center;
+  }
+  .btn-1 {
+    text-align: center;
+    margin-left: 0px;
+  }
+  .gif0 {
+    width: 100%;
+    padding-top: 100px;
     bottom: 0px;
     text-align: center;
   }
-  .gif1{
-    padding:15px;
+  .gif1 {
+    padding: 15px;
   }
-  .img-fluid{
-      width: 100%;
-      max-width: 100%;
-      height: auto;
-      position: relative;
-      bottom: -500px;
+  .img-fluid {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    bottom: -200px;
   }
 }
-
-
-
