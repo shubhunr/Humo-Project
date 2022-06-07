@@ -17,7 +17,7 @@ nav {
   height: 80px;
   padding-left: 100px;
   padding-right: 100px;
-  background-color: #28285c;
+  background-color: #f00000;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -94,7 +94,7 @@ nav .menu-btn {
   float: left;
 }
 .head1 {
-  color: #9fafff;
+  color: #f00000;
   font-size: 100px;
   font-weight: bold;
   padding-right: 1rem;
@@ -102,7 +102,7 @@ nav .menu-btn {
   padding-top: 235px;
 }
 .head2 {
-  color: #cfd7ff;
+  color: #000000;
   font-size: 48px;
   font-weight: 500;
   margin-left: 700px;

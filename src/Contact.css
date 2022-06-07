@@ -17,7 +17,7 @@ nav {
   height: 80px;
   padding-left: 100px;
   padding-right: 100px;
-  background-color: #28285c;
+  background-color: #F00000;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -28,7 +28,7 @@ nav .logo {
   font-weight: 600;
 }
 .head1 {
-  color: #9fafff;
+  color: #f00000;
   font-size: 50px;
   font-weight: bold;
   padding-right: 1rem;
@@ -43,7 +43,7 @@ nav .logo {
   line-height: 50px;
 }
 .address{
-  color: #cfd7ff; font-size: 24px; font-weight:500; margin-left: 150px;
+  color: #000000  ; font-size: 24px; font-weight:500; margin-left: 150px;
 }
 .pvt{
   line-height: 152px; letter-spacing: -.005em;
