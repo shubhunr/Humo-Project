@@ -143,10 +143,11 @@ nav .menu-btn {
     content: "\f00d";
   }
   nav ul {
-    position: fixed;
+    position: absolute;
+    z-index: 1;
     top: 80px;
     left: -1000px;
-    background-color: #fff;
+    background-color: #edf2f5;
     height: 100vh;
     width: 100%;
     position: fixed;
@@ -160,7 +161,7 @@ nav .menu-btn {
 
   .btn-nav {
     margin: 40px 100px;
-    background-color: #28285c;
+    background-color: #f00000;
     display: block;
     text-align: center;
   }
@@ -191,20 +192,20 @@ nav .menu-btn {
     flex-direction: column;
   }
 }
-.read-more-container {
+.read-more-c, .read-more-co, .read-more-con, .read-more-cont, .read-more-conta, .read-more-contai, .read-more-contain, .read-more-containe {
   display: flex;
   flex-direction: column;
   color: black;
 }
-.container {
-  padding: 2rem;
-  background-color: #fff;
-  border-radius: 2px;
-  line-height: 1.4rem;
-  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+
+
+.container1, .container2, .container3, .container4, .container5, .container6, .container7, .container8 {
+  
+  background-color: #fff; 
 }
 .read-more-btn {
   color: blue;
+  cursor: pointer;
 }
 .read-more-text {
   display: none;

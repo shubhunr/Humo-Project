@@ -4,10 +4,10 @@
     box-sizing: border-box;
   }
   body {
-    background-color: white;
+    background-color: #edf2f5;
   }
   /*#container{
-  }*/
+    }*/
   
   h1 {
     color: antiquewhite;
@@ -30,6 +30,7 @@
   ul {
     padding-top: 10px;
   }
+  .head1{color: #f00000; font-size: 100px; font-weight: bold;  padding-top: 20px; text-align: center;}
   
   .btn-nav {
     color: #fff;
@@ -44,21 +45,24 @@
   a {
     text-decoration: none;
     color: white;
-  } 
-  .img-fluid {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    position: relative;
-    bottom: 0px;
+  }
+  .card-title{
+    color: #f00000;
+  }
+  .card-text{
+    color: black;
+  }
+  .gallery-card{
+      margin: 100px 200px 0px 200px;
   }
   .footer {
     background-color: black;
     width: 100%;
     height: 400px;
     display: flex;
+    margin-top: 10%;
   }
-  .col {
+  .col0 {
     color: white;
     width: 22%;
     padding: 50px;
@@ -93,14 +97,13 @@
   }
   nav .menu-btn {
     color: #fff;
-    font-size: 28px;
+    font-size: 22px;
     cursor: pointer;
     display: none;
   }
   #click {
     display: none;
   }
-  
   @media (max-width: 1087px) {
     nav .menu-btn {
       display: block;
@@ -109,16 +112,15 @@
       content: "\f00d";
     }
     nav ul {
-      position: fixed;
+      position: absolute;
       top: 80px;
       left: -100%;
+      z-index: 1;
       background-color: #edf2f5;
       height: 100vh;
       width: 100%;
-      display: block;
       text-align: center;
       transition: all 0.3s ease;
-      z-index: 1;
     }
     #click:checked ~ ul {
       left: 0%;
@@ -129,7 +131,17 @@
       display: block;
       text-align: center;
     }
-    .col {
+    .head1{
+      font-size: 50px;
+      padding-top: 0%;
+      text-align: center;
+      margin: 20px;
+    }
+    .gallery-card{
+        margin: 10px 20px 0px 20px;
+        position: sticky;
+    }
+    .col0 {
       width: 100%;
       text-align: center;
     }
