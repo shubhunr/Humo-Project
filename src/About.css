@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body {
-  background-color: white;
+  background-color: #edf2f5;
 }
 /*#container{
   }*/
@@ -17,7 +17,7 @@ nav {
   height: 80px;
   padding-left: 100px;
   padding-right: 100px;
-  background-color: #28285c;
+  background-color: #f00000;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -30,7 +30,7 @@ nav .logo {
 ul {
   padding-top: 10px;
 }
-.head1{color: #9fafff; font-size: 100px; font-weight: bold;  padding-top: 20px; text-align: center;}
+.head1{color: #f00000; font-size: 100px; font-weight: bold;  padding-top: 20px; text-align: center;}
 
 .btn-nav {
   color: #fff;
@@ -49,6 +49,36 @@ a {
 .btn-1 {
   background-color: #28285c;
   color: #fff;
+}
+.footer {
+  background-color: black;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  margin-top: 10%;
+}
+.col {
+  color: white;
+  width: 22%;
+  padding: 50px;
+  letter-spacing: 2.5px;
+}
+ul {
+  color: #f00000;
+}
+.foot-li-1 {
+  list-style: none;
+  padding: 8px;
+  color: #fff !important;
+}
+.webmasters {
+  background-color: black;
+  align-items: center;
+  justify-content: space-between;
+}
+.col1 {
+  width: 34%;
+  padding: 50px;
 }
 .btn-nav:hover,
 .active:hover {
@@ -101,5 +131,25 @@ nav .menu-btn {
     padding-top: 0%;
     text-align: center;
     margin: 20px;
+  }
+  .col {
+    width: 100%;
+    text-align: center;
+  }
+  .col1 {
+    width: 100%;
+    text-align: center;
+  }
+  .footer {
+    flex-direction: column;
+    height: auto;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+  }
+  .webmasters {
+    align-items: center;
+    flex-direction: column;
   }
 }
