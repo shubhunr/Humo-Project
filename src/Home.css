@@ -5,6 +5,9 @@
   margin: 0px;
   padding: 0px;
 }
+html{
+  scroll-behavior: smooth;
+}
 
 body {
   font-family: "Exo", sans-serif;
@@ -45,6 +48,9 @@ a {
   text-decoration: none;
   color: white;
 }
+a:hover{
+   color:white
+}
 .footer {
   background-color: black;
   width: 100%;
@@ -81,20 +87,20 @@ a {
   width: 34%;
   padding: 50px;
 }
-.prosec {
+#prosec {
   height: 50px;
   text-align: center;
   padding-top: 20px;
   margin-top: 50px;
   text-decoration: wavy;
 }
-.prosec h2 {
+#prosec h2 {
   position: relative;
   margin-top: 10px;
   margin-bottom: 15px;
   padding-bottom: 15px;
 }
-.prosec h2::after {
+#prosec h2::after {
   position: absolute;
   content: "";
   background: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
@@ -115,6 +121,16 @@ a {
 .btn1 {
   border: 2px;
   border-color: #ff0000;
+  border-style: solid;
+  height: 50px;
+  padding: 10px;
+  margin-top: 1800px;
+  background-color: #232b2b;
+  z-index: 1;
+}
+.btn3 {
+  border: 2px;
+  border-color: blue;
   border-style: solid;
   height: 50px;
   padding: 10px;
@@ -148,7 +164,14 @@ a {
 .btn1:hover,
 .active:hover {
   background-color: #ff0000;
+  
 }
+.btn3:hover,
+.active:hover {
+  background-color: blue;
+  
+}
+
 #services {
   box-sizing: border-box;
   padding: 100px 0;
