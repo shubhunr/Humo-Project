@@ -2,6 +2,8 @@
 
 
 
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Exo:400,700");
 * {
     margin: 0;
     padding: 0;
@@ -9,6 +11,7 @@
   }
   body {
     background-color: white;
+    font-family: "Exo", sans-serif;
   }
   /*#container{
   }*/
@@ -38,7 +41,6 @@
   .btn-nav {
     color: #fff;
     font-size: 18px;
-    font-weight: 12000px;
     letter-spacing: 1px;
     padding: 15px 25px;
     border-radius: 5px;
@@ -162,12 +164,7 @@
     .intro {
       width: 100%;
     }
-    .head1 {
-      font-size: 50px;
-      padding-top: 0%;
-      text-align: center;
-      margin: 20px;
-    }
+
     .head2 {
       text-align: center;
       margin: 20px;

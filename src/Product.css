@@ -1,10 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Exo:400,700");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 body {
-  background-color: white;
+  background-color: #f6f6f6;
+  
+  
 }
 /*#container{
     }*/
@@ -21,6 +25,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  font-family: "Exo", sans-serif;
 }
 nav .logo {
   font-size: 33px;
@@ -31,10 +36,11 @@ nav .logo {
 }
 .head1 {
   color: #f00000;
-  font-size: 100px;
+  font-size: 72px;
   font-weight: bold;
-  padding-top: 20px;
+  padding-top: 60px;
   text-align: center;
+  font-family: "Exo", sans-serif;
 }
 ul {
   padding-top: 10px;
@@ -42,8 +48,6 @@ ul {
 
 .btn-nav {
   color: #fff;
-  font-size: 18px;
-  font-weight: 12000px;
   letter-spacing: 1px;
   padding: 15px 25px;
   border-radius: 5px;
@@ -63,6 +67,7 @@ a {
   width: 100%;
   height: 400px;
   display: flex;
+  font-family: "Exo", sans-serif;
 }
 .col {
   color: white;

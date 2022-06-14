@@ -19,7 +19,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   font-family: "Ubuntu", sans-serif;
-  
+  font-weight: 900px;
   letter-spacing: 1px;
   z-index: 1;
 }
@@ -35,6 +35,7 @@ ul {
 .btn-nav {
   color: #fff;
   font-size: 18px;
+
   letter-spacing: 1px;
   padding: 15px 25px;
   border-radius: 5px;
@@ -50,27 +51,21 @@ a {
   width: 100%;
   height: 400px;
   display: flex;
-  margin-top: 5%;
-  
-  
+  margin-top: 10%;
 }
 .col {
   color: white;
   width: 22%;
   padding: 50px;
   letter-spacing: 2.5px;
-  
 }
-.col ul {
+ul {
   color: #ff0000;
-  font-weight: bold;
-  letter-spacing: 3.5px;
 }
 .foot-li-1 {
   list-style: none;
-  padding: 6px;
+  padding: 8px;
   color: #fff !important;
-  letter-spacing: 1.5px;
 }
 .webmasters {
   background-color: black;
@@ -83,26 +78,15 @@ a {
 }
 .prosec {
   height: 50px;
+
   text-align: center;
+  color: #000000;
+  font-weight: bold;
+  font-size: 48px;
   padding-top: 20px;
   margin-top: 50px;
+  font-family: "Ubuntu", sans-serif;
   text-decoration: wavy;
-}
-.prosec h2 {
-  position: relative;
-  margin-top: 10px;
-  margin-bottom: 15px;
-  padding-bottom: 15px;
-}
-.prosec h2::after {
-  position: absolute;
-  content: "";
-  background: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
-  height: 4px;
-  width: 60px;
-  bottom: 0;
-  margin-left: -30px;
-  left: 50%;
 }
 .card-group {
   padding-left: 200px;
@@ -125,7 +109,6 @@ a {
 .card {
   align-items: center;
   z-index: 1;
-  border: 0px;
   /*background: url(/src/pexels-pixabay-531880.jpg);*/
 }
 .card-img-top {
@@ -139,11 +122,9 @@ a {
   letter-spacing: 2px;
 }
 .card-text {
-  width: 300px;
   color: #000000;
   font-weight: 600;
   font-size: 16px;
-  text-align: left;
 }
 .btn1:hover,
 .active:hover {
@@ -180,7 +161,7 @@ a {
   border-style: solid;
   height: 50px;
   padding: 10px;
-  margin-top: 20px;
+  margin-top: 20px
   background-color: #232b2b;
   z-index: 1;
 }
@@ -287,7 +268,7 @@ nav .menu-btn {
   color: #fff;
   font-size: 100px;
   font-weight: bold;
-  padding-top: 180px;
+  padding-top: 235px;
   font-family: "Dancing Script", cursive;
   line-height: 152px;
   letter-spacing: -0.005em;
@@ -296,6 +277,7 @@ nav .menu-btn {
   color: #f00000;
   font-size: 100px;
   font-weight: bold;
+  padding-top: 45px;
   font-family: "Ubuntu", sans-serif;
   line-height: 252px;
   letter-spacing: -0.005em;
@@ -483,7 +465,6 @@ nav .menu-btn {
   .col1 {
     width: 100%;
     text-align: center;
-    padding: 0px;
   }
   .footer {
     flex-direction: column;

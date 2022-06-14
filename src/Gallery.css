@@ -1,165 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Exo:400,700");
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  body {
-    background-color: #edf2f5;
-  }
-  /*#container{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #edf2f5;
+  font-family: "Exo", sans-serif;
+}
+/*#container{
     }*/
-  
-  h1 {
-    color: antiquewhite;
-    font-weight: bold;
+
+h1 {
+  color: antiquewhite;
+  font-weight: bold;
+}
+nav {
+  height: 80px;
+  padding-left: 100px;
+  padding-right: 100px;
+  background-color: #f00000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .logo {
+  font-size: 33px;
+  color: #fff;
+  font-weight: 600;
+}
+ul {
+  padding-top: 10px;
+}
+.head1 {
+  color: #f00000;
+  font-size: 100px;
+  font-weight: bold;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.btn-nav {
+  color: #fff;
+  font-size: 18px;
+  letter-spacing: 1px;
+  padding: 15px 25px;
+  border-radius: 5px;
+  transition: all 0.8s ease;
+  margin-top: 500px;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.card-title {
+  color: #f00000;
+}
+.card-text {
+  color: black;
+}
+.gallery-card {
+  margin: 100px 200px 0px 200px;
+}
+.footer {
+  background-color: black;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  margin-top: 10%;
+}
+.col0 {
+  color: white;
+  width: 22%;
+  padding: 50px;
+  letter-spacing: 2.5px;
+}
+ul {
+  color: #f00000;
+}
+.foot-li-1 {
+  list-style: none;
+  padding: 8px;
+  color: #fff !important;
+}
+.webmasters {
+  background-color: black;
+  align-items: center;
+  justify-content: space-between;
+}
+.col1 {
+  width: 34%;
+  padding: 50px;
+}
+.btn-nav:hover,
+.active:hover {
+  color: black;
+}
+
+.btn-nav:hover,
+.active:hover {
+  background-color: black;
+  color: #fff;
+}
+nav .menu-btn {
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+#click {
+  display: none;
+}
+@media (max-width: 1087px) {
+  nav .menu-btn {
+    display: block;
   }
-  nav {
-    height: 80px;
-    padding-left: 100px;
-    padding-right: 100px;
-    background-color: #f00000;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  #click:checked ~ .menu-btn i::before {
+    content: "\f00d";
   }
-  nav .logo {
-    font-size: 33px;
-    color: #fff;
-    font-weight: 600;
-  }
-  ul {
-    padding-top: 10px;
-  }
-  .head1{color: #f00000; font-size: 100px; font-weight: bold;  padding-top: 20px; text-align: center;}
-  
-  .btn-nav {
-    color: #fff;
-    font-size: 18px;
-    font-weight: 12000px;
-    letter-spacing: 1px;
-    padding: 15px 25px;
-    border-radius: 5px;
-    transition: all 0.8s ease;
-    margin-top: 500px;
-  }
-  a {
-    text-decoration: none;
-    color: white;
-  }
-  .card-title{
-    color: #f00000;
-  }
-  .card-text{
-    color: black;
-  }
-  .gallery-card{
-      margin: 100px 200px 0px 200px;
-  }
-  .footer {
-    background-color: black;
+  nav ul {
+    position: absolute;
+    top: 80px;
+    left: -100%;
+    z-index: 1;
+    background-color: #edf2f5;
+    height: 100vh;
     width: 100%;
-    height: 400px;
-    display: flex;
-    margin-top: 10%;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+  #click:checked ~ ul {
+    left: 0%;
+  }
+  .btn-nav {
+    margin: 40px 100px;
+    background-color: #f00000;
+    display: block;
+    text-align: center;
+  }
+  .head1 {
+    font-size: 50px;
+    padding-top: 0%;
+    text-align: center;
+    margin: 20px;
+  }
+  .gallery-card {
+    margin: 10px 20px 0px 20px;
+    position: sticky;
   }
   .col0 {
-    color: white;
-    width: 22%;
-    padding: 50px;
-    letter-spacing: 2.5px;
-  }
-  ul {
-    color: #f00000;
-  }
-  .foot-li-1 {
-    list-style: none;
-    padding: 8px;
-    color: #fff !important;
-  }
-  .webmasters {
-    background-color: black;
-    align-items: center;
-    justify-content: space-between;
+    width: 100%;
+    text-align: center;
   }
   .col1 {
-    width: 34%;
-    padding: 50px;
+    width: 100%;
+    text-align: center;
   }
-  .btn-nav:hover,
-  .active:hover {
-    color: black;
+  .footer {
+    flex-direction: column;
+    height: auto;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
   }
-  
-  .btn-nav:hover,
-  .active:hover {
-    background-color: black;
-    color: #fff;
+  .webmasters {
+    align-items: center;
+    flex-direction: column;
   }
-  nav .menu-btn {
-    color: #fff;
-    font-size: 22px;
-    cursor: pointer;
-    display: none;
-  }
-  #click {
-    display: none;
-  }
-  @media (max-width: 1087px) {
-    nav .menu-btn {
-      display: block;
-    }
-    #click:checked ~ .menu-btn i::before {
-      content: "\f00d";
-    }
-    nav ul {
-      position: absolute;
-      top: 80px;
-      left: -100%;
-      z-index: 1;
-      background-color: #edf2f5;
-      height: 100vh;
-      width: 100%;
-      text-align: center;
-      transition: all 0.3s ease;
-    }
-    #click:checked ~ ul {
-      left: 0%;
-    }
-    .btn-nav {
-      margin: 40px 100px;
-      background-color: #f00000;
-      display: block;
-      text-align: center;
-    }
-    .head1{
-      font-size: 50px;
-      padding-top: 0%;
-      text-align: center;
-      margin: 20px;
-    }
-    .gallery-card{
-        margin: 10px 20px 0px 20px;
-        position: sticky;
-    }
-    .col0 {
-      width: 100%;
-      text-align: center;
-    }
-    .col1 {
-      width: 100%;
-      text-align: center;
-    }
-    .footer {
-      flex-direction: column;
-      height: auto;
-      width: auto;
-      justify-content: center;
-      align-items: center;
-      margin: 0px;
-    }
-    .webmasters {
-      align-items: center;
-      flex-direction: column;
-    }
-  }
-  
+}
