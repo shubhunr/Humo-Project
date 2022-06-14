@@ -1,0 +1,1490 @@
+<html lang="en">
+<head>
+    <meta name="viewport" content="initial-scale=1, user-scalable=no, width=device-width">
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Humo Health Care - Spaces by Chec </title>
+    <meta name="description" content="">
+    <link rel="publisher" href="https://chec.io">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Humo Health Care - Spaces by Chec">
+    <meta property="og:description" content="">
+    <meta property="og:url" content="https://spaces.chec.io/44091">
+    <meta property="og:site_name" content="Chec">
+    <link rel="canonical" href="https://spaces.chec.io/44091">
+    <meta property="fb:app_id" content="417367831681015">
+    <meta property="og:image"
+        content="https://cdn.chec.io/merchants/44091/assets/7taoZYlZsExsHN2g|abstract-molecules-medical-healthcare-business-landing.png">
+    <meta name="twitter:image"
+        content="https://cdn.chec.io/merchants/44091/assets/7taoZYlZsExsHN2g|abstract-molecules-medical-healthcare-business-landing.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:title" content="Humo Health Care - Spaces by Chec">
+    <meta name="twitter:site" content="@commercejs">
+    <meta name="twitter:domain" content="Chec">
+    <meta name="twitter:creator" content="@commercejs">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,400italic,300italic" rel="stylesheet"
+        type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link href="/css/checkout.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/assets/flickity/flickity.min.css">
+    <script src="/js/vendor.js?1474665817" type="text/javascript"></script>
+    <script type="text/javascript" src="https://js.stripe.com/v3/"></script>
+    <script type="text/javascript" src="https://cdn.chec.io/v2/commerce.js"></script>
+    <script type="text/javascript" src="/js/spaces.js" defer=""></script>
+    <script type="text/javascript" src="/js/jquery.hideseek.min.js" defer=""></script>
+    <script src="/assets/flickity/flickity.pkgd.min.js" defer=""></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery.serializeJSON/2.7.2/jquery.serializejson.min.js"></script>
+    <script src="https://cdn.rawgit.com/mgalante/jquery.redirect/master/jquery.redirect.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.payment/1.4.1/jquery.payment.min.js"></script>
+    <script src="https://www.paypalobjects.com/js/external/apdg.js"></script>
+</head>
+
+<body class="spaces ">
+
+    <div id="chec-basket" class="animated" onclick="cartShow()">
+        <span class="cart-icon">
+            <img src="/images/cart.white.png" width="23">
+        </span>
+        <span class="items" data-chec="cart-items">2 Items</span>
+        <span class="subtotal" data-chec="cart-subtotal">₹10,000.00</span>
+        <a class="view-cart mobile-only" href="javascript:cartShow()">View Cart</a>
+    </div>
+
+    <section id="shopping-cart">
+        <aside id="cart-overview" class="inactive">
+            <hr class="hologram-bar open">
+            <div class="shopping-cart-wrap">
+                <a class="hide-cart mobile-only" href="javascript:cartHide()">Close Cart</a>
+                <h3 class="shopping-cart-title"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Cart</h3>
+                <ul class="line-items">
+                    <li><span class="line-item-name">Foam Head Rests</span> <span class="line-item-quantity-alt"><input
+                                type="text" onblur="Spaces.quantity('item_7RyWOwmK5nEa2V', $(this).val())"
+                                value="2"></span> <span class="line-item-price">₹10,000.00</span> <span
+                            onclick="Spaces.removeItem('item_7RyWOwmK5nEa2V');  $(this).attr('onclick', '')"
+                            class="line-item-remove">✕</span> <span class="line-item-variants"></span> </li>
+                </ul>
+                <div class="subtotal">
+                    <h4>Subtotal</h4><span>₹10,000.00 <i>INR</i></span>
+                </div>
+                <div class="closing">
+                    <a class="go-to-checkout" href="javascript:Spaces.goToCheckout()"><i class="fa fa-lock"></i>
+                        <b>Secure</b> Checkout</a>
+                    <small class="secure">All transactions are safe &amp; secured by 2048 bit SSL encryption.</small>
+                </div>
+            </div>
+
+            <div id="spaces-inline-checkout"></div>
+            <hr class="hologram-bar close">
+        </aside>
+
+        <div id="cart-active-overlay" onclick="cartHide()"></div>
+    </section>
+
+    <header id="cover"
+        style="background-image: url('https://cdn.chec.io/merchants/44091/assets/7taoZYlZsExsHN2g|abstract-molecules-medical-healthcare-business-landing.png');">
+        <img src="https://i.embed.ly/1/display/resize?key=fab0b4012302409abb914cfc88c62f73&amp;url=https%3A%2F%2Fcdn.chec.io%2Fmerchants%2F44091%2Fassets%2FV5pOvJjOQE8rN8Mn%7Clogo.png&amp;width=300&amp;grow=false"
+            class="logo " width="150">
+        <h1 id="merchant-name">Humo Health Care</h1>
+        <span id="merchant-bio"></span>
+    </header>
+
+    <div id="categories">
+        <h4>Categories</h4>
+        <ul>
+            <a href="/44091">
+                <li class=" active ">All</li>
+            </a>
+            <a href="?category_slug=radiotherapy">
+                <li class="">Radiotherapy</li>
+            </a>
+            <a href="?category_slug=breast-prosthesis-an-alternative-to-reconstruction">
+                <li class="">Breast Prosthesis-An Alternative to Reconstruction</li>
+            </a>
+            <a href="?category_slug=instruments-instrumental-accessories">
+                <li class="">Instruments / Instrumental accessories</li>
+            </a>
+            <a href="?category_slug=organic-supportive-therapies">
+                <li class="">Organic supportive therapies</li>
+            </a>
+            <a href="?category_slug=chemotherapy">
+                <li class="">Chemotherapy</li>
+            </a>
+        </ul>
+    </div>
+
+    <input id="search" name="search" style="margin-top:30px; border:1px solid rgba(108, 124, 144, 0.47);"
+        placeholder="Search products..." type="text" data-list="#products" autocomplete="off">
+
+    <section id="products" data-display-type="grid">
+        <div class="product" data-product-name="Drop shape Silicone Breast" data-product-id="prod_VKXmwDyBYDorgD">
+            <div class="product-details-overlay">
+                <div class="product-contents">
+                    <div class="images ignore">
+                        <div class="hover-overlay">
+                            <a href="javascript:showProductDetailsModal('prod_VKXmwDyBYDorgD')"
+                                class="learn-more">Product Details</a>
+                            <a href="javascript:Spaces.AddToCart('prod_VKXmwDyBYDorgD');" class="buy-now"><i
+                                    class="fa fa-lock" aria-hidden="true"></i> <b>Add to Cart</b></a>
+                        </div>
+                        <img src="https://cdn.chec.io/merchants/44091/assets/rPrahdf9epKPLgMQ|Silicone_Light_Breast_.jpg"
+                            class="product-image--main" onerror="this.style.display='none';">
+                        <div class="product-images">
+                            <img src="https://cdn.chec.io/merchants/44091/assets/rPrahdf9epKPLgMQ|Silicone_Light_Breast_.jpg"
+                                class="product-image carousel-cell" alt="" onerror="this.style.display='none';">
+                        </div>
+                    </div>
+
+                    <div class="product-info">
+                        <span class="product-name">Drop shape Silicone Breast <span
+                                class="inline-price">₹5,000.00</span></span>
+                        <span class="product-description">
+                            <h1>Silicone- Light Triangular Breast</h1>
+                            <h1></h1>
+                            <h2><strong>Triangle-shaped silicone Breasts.</strong></h2>
+                            <ul>
+                                <li>
+                                    <p>These Breasts are of high quality and lighter in weight when compared to the
+                                        Drop, shaped Breast.</p>
+                                </li>
+                                <li>
+                                    <p>As these are very soft Silicone breasts, so they are very easy to wear with the
+                                        feelings of natural breast.</p>
+                                </li>
+                                <li>
+                                    <p>We recommend these lighter Silicone prosthesis for the pateint of age more than
+                                        45 years,&nbsp; because at this age in most of the females the muscles of the
+                                        natural breasts also gets soft, so to match up with the available healthy
+                                        breast, these seems to be good.</p>
+                                </li>
+                            </ul>
+                        </span>
+                        <span class="product-price">₹5,000.00</span>
+
+                        <a href="javascript:hideProductDetailsModal()" class="close">Close</a>
+                        <a href="javascript:Spaces.AddToCart('prod_VKXmwDyBYDorgD');" class="buy-now"><i
+                                class="fa fa-lock" aria-hidden="true"></i> <b>Add to Cart</b></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product" data-product-name="Cotton Breast" data-product-id="prod_eN1ql9kpYYoz3y">
+            <div class="product-details-overlay">
+                <div class="product-contents">
+                    <div class="images ignore">
+                        <div class="hover-overlay">
+                            <a href="javascript:showProductDetailsModal('prod_eN1ql9kpYYoz3y')"
+                                class="learn-more">Product Details</a>
+                            <a href="javascript:Spaces.AddToCart('prod_eN1ql9kpYYoz3y');" class="buy-now"><i
+                                    class="fa fa-lock" aria-hidden="true"></i> <b>Add to Cart</b></a>
+                        </div>
+                        <img src="https://cdn.chec.io/merchants/44091/assets/w7tk8QTQCqqBWUvI|Cotton_Breast.jpg"
+                            class="product-image--main" onerror="this.style.display='none';">
+                        <div class="product-images">
+                            <img src="https://cdn.chec.io/merchants/44091/assets/w7tk8QTQCqqBWUvI|Cotton_Breast.jpg"
+                                class="product-image carousel-cell" alt="" onerror="this.style.display='none';">
+                        </div>
+                    </div>
+
+                    <div class="product-info">
+                        <span class="product-name">Cotton Breast <span class="inline-price">₹5,000.00</span></span>
+                        <span class="product-description">
+                            <h1>Cotton Breast</h1>
+                            <h1></h1>
+                            <h2>Description -</h2>
+                            <p></p>
+                            <ul>
+                                <li>
+                                    <p>These are specially designed cotton-padded foam-filled Prostheses for mastectomy
+                                        patients.</p>
+                                </li>
+                                <li>
+                                    <p>These are very light in weight and can be easily worn by the patients.</p>
+                                </li>
+                                <li>
+                                    <p>These Faom filled Cotton paded prosthesis&nbsp; are washable and available in all
+                                        the sizes as per the requirement of the patients.</p>
+                                </li>
+                            </ul>
+                        </span>
+                        <span class="product-price">₹5,000.00</span>
+
+                        <a href="javascript:hideProductDetailsModal()" class="close">Close</a>
+                        <a href="javascript:Spaces.AddToCart('prod_eN1ql9kpYYoz3y');" class="buy-now"><i
+                                class="fa fa-lock" aria-hidden="true"></i> <b>Add to Cart</b></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product" data-product-name="Pouched Bra- To Support Breast Prosthesis"
+            data-product-id="prod_7ZAMo1JZgW5NJ4">
+            <div class="product-details-overlay">
+                <div class="product-contents">
+                    <div class="images ignore">
+                        <div class="hover-overlay">
+                            <a href="javascript:showProductDetailsModal('prod_7ZAMo1JZgW5NJ4')"
+                                class="learn-more">Product Details</a>
+                            <a href="javascript:Spaces.AddToCart('prod_7ZAMo1JZgW5NJ4');" class="buy-now"><i
+                                    class="fa fa-lock" aria-hidden="true"></i> <b>Add to Cart</b></a>
+                        </div>
+                        <img src="https://cdn.chec.io/merchants/44091/assets/K6n8ZxIb2JkTnbQE|Pouched Bra.jpg"
+                            class="product-image--main" onerror="this.style.display='none';">
+                        <div class="product-images">
+                            <img src="https://cdn.chec.io/merchants/44091/assets/K6n8ZxIb2JkTnbQE|Pouched Bra.jpg"
+                                class="product-image carousel-cell" alt="" onerror="this.style.display='none';">
+                        </div>
+                    </div>
+
+                    <div class="product-info">
+                        <span class="product-name">Pouched Bra- To Support Breast Prosthesis <span
+                                class="inline-price">₹5,000.00</span></span>
+                        <span class="product-description">
+                            <h1>Pouched Bra- To Support Breast Prosthesis</h1>
+                            <h1></h1>
+                            <h2>Description -</h2>
+                            <p></p>
+                            <ul>
+                                <li>
+                                    <p>This is a specially designed Bra, Having Pouches on both the cups, so that either
+                                        Silicone Prosthesis or Cotton , foam filled Prosthesis pad can be easly worn by
+                                        the patients.</p>
+                                </li>
+                                <li>
+                                    <p>These Bras, help patients to easly wear up prosthesis without the fear that
+                                        prosthesis may jump out while any kind of physical activities.</p>
+                                </li>
+                                <li>
+                                    <p>These Bras are made of Cotton, and having High quality value.</p>
+                                </li>
+                            </ul>
+                        </span>
+                        <span class="product-price">₹5,000.00</span>
+
+                        <a href="javascript:hideProductDetailsModal()" class="close">Close</a>
+                        <a href="javascript:Spaces.AddToCart('prod_7ZAMo1JZgW5NJ4');" class="buy-now"><i
+                                class="fa fa-lock" aria-hidden="true"></i> <b>Add to Cart</b></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product" data-product-name="Mopner ( Mouth Opener )-Rubber Coated"
+            data-product-id="prod_L1vOoZKyA45Ra8">
+            <div class="product-details-overlay">
+                <div class="product-contents">
+                    <div class="images ignore">
+                        <div class="hover-overlay">
+                            <a href="javascript:showProductDetailsModal('prod_L1vOoZKyA45Ra8')"
+                                class="learn-more">Product Details</a>
+                            <a href="javascript:Spaces.AddToCart('prod_L1vOoZKyA45Ra8');" class="buy-now"><i
+                                    class="fa fa-lock" aria-hidden="true"></i> <b>Add to Cart</b></a>
+                        </div>
+                        <img src="https://cdn.chec.io/merchants/44091/assets/bf582S1xaQXLhF63|Mopner_Rubber_Coated.jpg"
+                            class="product-image--main" onerror="this.style.display='none';">
+                        <div class="product-images">
+                            <img src="https://cdn.chec.io/merchants/44091/assets/bf582S1xaQXLhF63|Mopner_Rubber_Coated.jpg"
+                                class="product-image carousel-cell" alt="" onerror="this.style.display='none';">
+                        </div>
+                    </div>
+
+                    <div class="product-info">
+                        <span class="product-name">Mopner ( Mouth Opener )-Rubber Coated <span
+                                class="inline-price">₹5,000.00</span></span>
+                        <span class="product-description">
+                            <h1><strong>Mopner ( Mouth Opener )-Rubber Coated</strong></h1>
+                            <h1></h1>
+                            <h2>Description -</h2>
+                            <ul>
+                                <li>
+                                    <p>This Mouth Opener comes with a rubber coating on both the arms, this rubber
+                                        coating is very much required to protect the teeth of the patients during the
+                                        use, as this Instrument creates a heavy pressure on the Teeth, so direct contact
+                                        of the stain&nbsp;less steel of the Instrument may lead to the breakage of the
+                                        Teeth edges.</p>
+                                </li>
+                                <li>
+                                    <p>The rubber provided is purely Non toxic and dose not have any side effect on the
+                                        patient.</p>
+                                </li>
+                                <li>
+                                    <p>After use Patients are requested to clean the instrument with warm water or any
+                                        type of sanitiser.</p>
+                                </li>
+                                <li>
+                                    <p>Instrument should be kept in a place so that germs, dust and any such other
+                                        contacts with the instrument should not be their.</p>
+                                </li>
+                            </ul>
+                        </span>
+                        <span class="product-price">₹5,000.00</span>
+
+                        <a href="javascript:hideProductDetailsModal()" class="close">Close</a>
+                        <a href="javascript:Spaces.AddToCart('prod_L1vOoZKyA45Ra8');" class="buy-now"><i
+                                class="fa fa-lock" aria-hidden="true"></i> <b>Add to Cart</b></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product" data-product-name="T-Gramin (Wheatgrass Tablets 500 mg)"
+            data-product-id="prod_p6dP5g7NgR5n7k">
+            <div class="product-details-overlay">
+                <div class="product-contents">
+                    <div class="images ignore">
+                        <div class="hover-overlay">
+                            <a href="javascript:showProductDetailsModal('prod_p6dP5g7NgR5n7k')"
+                                class="learn-more">Product Details</a>
+                            <a href="javascript:Spaces.AddToCart('prod_p6dP5g7NgR5n7k');" class="buy-now"><i
+                                    class="fa fa-lock" aria-hidden="true"></i> <b>Add to Cart</b></a>
+                        </div>
+                        <img src="https://cdn.chec.io/merchants/44091/assets/yb2CF3qh27sdhz7A|T-Gramin (Wheatgrass Tablets 500 mg).jpg"
+                            class="product-image--main" onerror="this.style.display='none';">
+                        <div class="product-images">
+                            <img src="https://cdn.chec.io/merchants/44091/assets/yb2CF3qh27sdhz7A|T-Gramin (Wheatgrass Tablets 500 mg).jpg"
+                                class="product-image carousel-cell" alt="" onerror="this.style.display='none';">
+                        </div>
+                    </div>
+
+                    <div class="product-info">
+                        <span class="product-name">T-Gramin (Wheatgrass Tablets 500 mg) <span
+                                class="inline-price">₹5,000.00</span></span>
+                        <span class="product-description">
+                            <h1><strong>T-Gramin (Wheatgrass Tablets 500 mg)</strong></h1>
+                            <h1></h1>
+                            <h2><strong>Description -</strong></h2>
+                            <p></p>
+                            <h3><strong><em>This is a wheatgrass tablet of 500 mg.</em></strong></h3>
+                            <p></p>
+                            <ul>
+                                <li>
+                                    <p>This tablet is a Miracle in the food suppliments as it contains, 92 minerals, 17
+                                        amino acids including all 9 essential amino acids, and 30 typye of Enzymes and
+                                        13 type of Important Vitamins.</p>
+                                </li>
+                                <li>
+                                    <p>70% part of the wheat grass is chlorophyll, which is a strong DNA protector, and
+                                        is an excellent natural antioxidant .</p>
+                                </li>
+                                <li>
+                                    <p>It is a gold mine in food suppliments, 100% Organic and Safe.</p>
+                                </li>
+                                <li>
+                                    <p>Has been approved by USDA, NPOP, USFDA etc.</p>
+                                </li>
+                                <li>
+                                    <p>Its in a bottle pack of two sizes-</p>
+                                    <ul>
+                                        <li>
+                                            <p>120 Tab Pack Bottle</p>
+                                        </li>
+                                        <li>
+                                            <p>60 Tab&nbsp;Pack Bottle.</p>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <p><strong>Dose</strong> is 2-3 tab twice a day or as recommended by a medical
+                                        practitioner</p>
+                                </li>
+                            </ul>
+                        </span>
+                        <span class="product-price">₹5,000.00</span>
+
+                        <a href="javascript:hideProductDetailsModal()" class="close">Close</a>
+                        <a href="javascript:Spaces.AddToCart('prod_p6dP5g7NgR5n7k');" class="buy-now"><i
+                                class="fa fa-lock" aria-hidden="true"></i> <b>Add to Cart</b></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product" data-product-name="Karkumin-P" data-product-id="prod_O3bR5X1M3klnzd">
+            <div class="product-details-overlay">
+                <div class="product-contents">
+                    <div class="images ignore">
+                        <div class="hover-overlay">
+                            <a href="javascript:showProductDetailsModal('prod_O3bR5X1M3klnzd')"
+                                class="learn-more">Product Details</a>
+                            <a href="javascript:Spaces.AddToCart('prod_O3bR5X1M3klnzd');" class="buy-now"><i
+                                    class="fa fa-lock" aria-hidden="true"></i> <b>Add to Cart</b></a>
+                        </div>
+                        <img src="https://cdn.chec.io/merchants/44091/assets/A6G7dbYJLbO85iSr|Karkumin-P.jpg"
+                            class="product-image--main" onerror="this.style.display='none';">
+                        <div class="product-images">
+                            <img src="https://cdn.chec.io/merchants/44091/assets/A6G7dbYJLbO85iSr|Karkumin-P.jpg"
+                                class="product-image carousel-cell" alt="" onerror="this.style.display='none';">
+                        </div>
+                    </div>
+
+                    <div class="product-info">
+                        <span class="product-name">Karkumin-P <span class="inline-price">₹5,000.00</span></span>
+                        <span class="product-description">
+                            <h2>Karkumin-P</h2>
+                            <p></p>
+                            <h3>Description -</h3>
+                        </span>
+                        <span class="product-price">₹5,000.00</span>
+
+                        <a href="javascript:hideProductDetailsModal()" class="close">Close</a>
+                        <a href="javascript:Spaces.AddToCart('prod_O3bR5X1M3klnzd');" class="buy-now"><i
+                                class="fa fa-lock" aria-hidden="true"></i> <b>Add to Cart</b></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product" data-product-name="Humine 200 ml Syp" data-product-id="prod_ypbroE9DZno8n4">
+            <div class="product-details-overlay">
+                <div class="product-contents">
+                    <div class="images ignore">
+                        <div class="hover-overlay">
+                            <a href="javascript:showProductDetailsModal('prod_ypbroE9DZno8n4')"
+                                class="learn-more">Product Details</a>
+                            <a href="javascript:Spaces.AddToCart('prod_ypbroE9DZno8n4');" class="buy-now"><i
+                                    class="fa fa-lock" aria-hidden="true"></i> <b>Add to Cart</b></a>
+                        </div>
+                        <img src="https://cdn.chec.io/merchants/44091/assets/zTJfIIbW99v2dols|Humine 200 ml Syp.jpg"
+                            class="product-image--main" onerror="this.style.display='none';">
+                        <div class="product-images">
+                            <img src="https://cdn.chec.io/merchants/44091/assets/zTJfIIbW99v2dols|Humine 200 ml Syp.jpg"
+                                class="product-image carousel-cell" alt="" onerror="this.style.display='none';">
+                        </div>
+                    </div>
+
+                    <div class="product-info">
+                        <span class="product-name">Humine 200 ml Syp <span class="inline-price">₹2,150.00</span></span>
+                        <span class="product-description">
+                            <h1>Humine 200 ml Syp</h1>
+                            <h1></h1>
+                            <h2>Description -</h2>
+                            <p></p>
+                            <h3>Humine Syp Contain&nbsp;</h3>
+                            <p></p>
+                            <ul>
+                                <li>
+                                    <p>Curcumonoid 125mg and Piperine 2mg per 5ml.</p>
+                                </li>
+                                <li>
+                                    <p>This is one of the best Antioxidant and is medically aslo recommended for many
+                                        illnesses.</p>
+                                </li>
+                                <li>
+                                    <p>Recommonded dose is 10ml Twice a day or as suggested&nbsp; by the medical
+                                        practitioners.</p>
+                                    <p></p>
+                                </li>
+                            </ul>
+                        </span>
+                        <span class="product-price">₹2,150.00</span>
+
+                        <a href="javascript:hideProductDetailsModal()" class="close">Close</a>
+                        <a href="javascript:Spaces.AddToCart('prod_ypbroE9DZno8n4');" class="buy-now"><i
+                                class="fa fa-lock" aria-hidden="true"></i> <b>Add to Cart</b></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product" data-product-name="CoQmo 200 ml Syp" data-product-id="prod_Kvg9l616Km51bB">
+            <div class="product-details-overlay">
+                <div class="product-contents">
+                    <div class="images ignore">
+                        <div class="hover-overlay">
+                            <a href="javascript:showProductDetailsModal('prod_Kvg9l616Km51bB')"
+                                class="learn-more">Product Details</a>
+                            <a href="javascript:Spaces.AddToCart('prod_Kvg9l616Km51bB');" class="buy-now"><i
+                                    class="fa fa-lock" aria-hidden="true"></i> <b>Add to Cart</b></a>
+                        </div>
+                        <img src="https://cdn.chec.io/merchants/44091/assets/PgxDx1jz1frBD773|CoQmo 200 ml Syp.jpg"
+                            class="product-image--main" onerror="this.style.display='none';">
+                        <div class="product-images">
+                            <img src="https://cdn.chec.io/merchants/44091/assets/PgxDx1jz1frBD773|CoQmo 200 ml Syp.jpg"
+                                class="product-image carousel-cell" alt="" onerror="this.style.display='none';">
+                        </div>
+                    </div>
+
+                    <div class="product-info">
+                        <span class="product-name">CoQmo 200 ml Syp <span class="inline-price">₹5,000.00</span></span>
+                        <span class="product-description">
+                            <h2>CoQmo 200 ml Syp</h2>
+                            <p></p>
+                            <h3>Description -</h3>
+                            <p></p>
+                            <p>CoQmo is Involved in the ATP Production, inside the Mitochondrial. Serve as an
+                                antioxidant and protect cells from oxidative damage</p>
+                            <p></p>
+                            <p><strong>Health conditions like heart disease, brain disorders, diabetes, and cancer have
+                                    been linked to low levels of CoQ10.</strong></p>
+                            <p></p>
+                            <p><strong>Benifits:</strong></p>
+                            <p><strong>1.)&nbsp;&nbsp;&nbsp;&nbsp; </strong>It May Help Treat Heart
+                                Failure.<strong>:</strong></p>
+                            <p>2. It Could Help With Fertility.</p>
+                            <p>3. It Might Help Keep Your Skin Young.</p>
+                            <p>4. It Could Reduce Headaches.</p>
+                            <p>5. It Could Help With Exercise Performance.</p>
+                            <p>6. It Could Help With Diabetes</p>
+                            <p>7. It Might Play a Role in Cancer Prevention.</p>
+                            <p>8. It Is Good for the Brain.</p>
+                            <p>9. CoQ10 Could Protect the Lungs</p>
+                            <p></p>
+                            <p><strong>Dosage and Side
+                                    Effects.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
+                            </p>
+                            <h3>The standard dose of CoQ10 ranges from 90 mg to 200 mg per day. Doses up to 500 mg seem
+                                well tolerated,</h3>
+                            <h3>&nbsp;CoQ10 is a fat-soluble compound, should be taken with food for better absorption.
+                            </h3>
+                            <h3>Participants in some studies showed no major side effects taking daily doses of 1,200 mg
+                                for 16 months .</h3>
+                            <h3></h3>
+                            <h3><strong>However if side effects appear, it is recommended to divide the daily dose into
+                                    two to three smaller doses.</strong></h3>
+                            <p></p>
+                        </span>
+                        <span class="product-price">₹5,000.00</span>
+
+                        <a href="javascript:hideProductDetailsModal()" class="close">Close</a>
+                        <a href="javascript:Spaces.AddToCart('prod_Kvg9l616Km51bB');" class="buy-now"><i
+                                class="fa fa-lock" aria-hidden="true"></i> <b>Add to Cart</b></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product" data-product-name="TAXAN-P (Paclitaxel)" data-product-id="prod_r2LM5QzN3PlZV1">
+            <div class="product-details-overlay">
+                <div class="product-contents">
+                    <div class="images ignore">
+                        <div class="hover-overlay">
+                            <a href="javascript:showProductDetailsModal('prod_r2LM5QzN3PlZV1')"
+                                class="learn-more">Product Details</a>
+                            <a href="javascript:Spaces.AddToCart('prod_r2LM5QzN3PlZV1');" class="buy-now"><i
+                                    class="fa fa-lock" aria-hidden="true"></i> <b>Add to Cart</b></a>
+                        </div>
+                        <img src="https://cdn.chec.io/merchants/44091/assets/AA03KwdUIVIetFlf|Taxan-p.jpg"
+                            class="product-image--main" onerror="this.style.display='none';">
+                        <div class="product-images">
+                            <img src="https://cdn.chec.io/merchants/44091/assets/AA03KwdUIVIetFlf|Taxan-p.jpg"
+                                class="product-image carousel-cell" alt="" onerror="this.style.display='none';">
+                        </div>
+                    </div>
+
+                    <div class="product-info">
+                        <span class="product-name">TAXAN-P (Paclitaxel) <span
+                                class="inline-price">₹5,000.00</span></span>
+                        <span class="product-description">
+                            <h1></h1>
+                            <h1><strong>TAXAN-P (Paclitaxel)</strong>l</h1>
+                            <p></p>
+                            <h2>What Paclitaxel is used for?</h2>
+                            <p></p>
+                            <h3>Paclitaxel is used for the treatment of breast, ovarian, lung, bladder, prostate,
+                                esophageal, and melanoma, as well as for some other types of solid tumors. It has been
+                                also used in Kaposi's Sarcom.</h3>
+                            <h2>Dose Window</h2>
+                            <h2>135mg/m2 to 175mg/m2 or as recommended by a medical practionar</h2>
+                            <h3><strong>Note : </strong>If a drug has been approved for one use Doctors some timee elect
+                                to use the same drug for some other problems if they believe it might be helpful.</h3>
+                        </span>
+                        <span class="product-price">₹5,000.00</span>
+
+                        <a href="javascript:hideProductDetailsModal()" class="close">Close</a>
+                        <a href="javascript:Spaces.AddToCart('prod_r2LM5QzN3PlZV1');" class="buy-now"><i
+                                class="fa fa-lock" aria-hidden="true"></i> <b>Add to Cart</b></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product" data-product-name="G-BINE (Gemcitabine HCL)" data-product-id="prod_VPvL5zWBvOlAQk">
+            <div class="product-details-overlay">
+                <div class="product-contents">
+                    <div class="images ignore">
+                        <div class="hover-overlay">
+                            <a href="javascript:showProductDetailsModal('prod_VPvL5zWBvOlAQk')"
+                                class="learn-more">Product Details</a>
+                            <a href="javascript:Spaces.AddToCart('prod_VPvL5zWBvOlAQk');" class="buy-now"><i
+                                    class="fa fa-lock" aria-hidden="true"></i> <b>Add to Cart</b></a>
+                        </div>
+                        <img src="https://cdn.chec.io/merchants/44091/assets/nT0tygkgg4HsJdaG|G-BINE (Gemcitabine HCL).jpg"
+                            class="product-image--main" onerror="this.style.display='none';">
+                        <div class="product-images">
+                            <img src="https://cdn.chec.io/merchants/44091/assets/nT0tygkgg4HsJdaG|G-BINE (Gemcitabine HCL).jpg"
+                                class="product-image carousel-cell" alt="" onerror="this.style.display='none';">
+                            <img src="https://cdn.chec.io/merchants/44091/assets/coEl6ZFbSaQyJkXQ|imdetails.jpg"
+                                class="product-image carousel-cell" alt="" onerror="this.style.display='none';">
+                        </div>
+                    </div>
+
+                    <div class="product-info">
+                        <span class="product-name">G-BINE (Gemcitabine HCL) <span
+                                class="inline-price">₹50,000.00</span></span>
+                        <span class="product-description">
+                            <h2>G-BINE (Gemcitabine HCL)</h2>
+                            <h2></h2>
+                            <h3><strong>Description -</strong></h3>
+                            <p></p>
+                            <ul>
+                                <li>
+                                    <p>Gemcitabine HCL is an Anti-cancer&nbsp;chemotherapy drug and is a nucleoside
+                                        analog that exhibits anti-tumor activity.</p>
+                                </li>
+                                <li>
+                                    <p>Gemcitabine HCL is classified as an antimetabolite<strong>.</strong></p>
+                                </li>
+                                <li>
+                                    <p><strong>What&nbsp;Gemcitabine is used for </strong>?....Gemcitabine &nbsp;is used
+                                        for the treatement of Pancreas, Non Small cell lung cancer, Metastatic bresat
+                                        cancer,&nbsp;bladder cancer,&nbsp;and&nbsp;soft tissue Sarcomas.</p>
+                                </li>
+                                <li>
+                                    <p><strong>Dose Window....&nbsp; </strong>1000mg/m2 to 1250mg/m2 or 2gm weekly or as
+                                        recommended by a medical practionar.</p>
+                                </li>
+                                <li>
+                                    <p><strong>Note :</strong> If a drug has been approved for one use Doctors some time
+                                        elect to use the same drug for some other problems if they believe it might be
+                                        helpful<strong>.</strong></p>
+                                </li>
+                            </ul>
+                            <p></p>
+                        </span>
+                        <span class="product-price">₹50,000.00</span>
+
+                        <a href="javascript:hideProductDetailsModal()" class="close">Close</a>
+                        <a href="javascript:Spaces.AddToCart('prod_VPvL5zWBvOlAQk');" class="buy-now"><i
+                                class="fa fa-lock" aria-hidden="true"></i> <b>Add to Cart</b></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product" data-product-name="C-Bine (Capecitabine)" data-product-id="prod_nPEVlNa23J5a7d">
+            <div class="product-details-overlay">
+                <div class="product-contents">
+                    <div class="images ignore">
+                        <div class="hover-overlay">
+                            <a href="javascript:showProductDetailsModal('prod_nPEVlNa23J5a7d')"
+                                class="learn-more">Product Details</a>
+                            <a href="javascript:Spaces.AddToCart('prod_nPEVlNa23J5a7d');" class="buy-now"><i
+                                    class="fa fa-lock" aria-hidden="true"></i> <b>Add to Cart</b></a>
+                        </div>
+                        <img src="https://cdn.chec.io/merchants/44091/assets/fXblImKjsvmSGTlV|C-Bine (Capecitabine).jpg"
+                            class="product-image--main" onerror="this.style.display='none';">
+                        <div class="product-images">
+                            <img src="https://cdn.chec.io/merchants/44091/assets/fXblImKjsvmSGTlV|C-Bine (Capecitabine).jpg"
+                                class="product-image carousel-cell" alt="" onerror="this.style.display='none';">
+                            <img src="https://cdn.chec.io/merchants/44091/assets/4C72jA5MLwljV3cZ|Capecitabine.jpg"
+                                class="product-image carousel-cell" alt="" onerror="this.style.display='none';">
+                        </div>
+                    </div>
+
+                    <div class="product-info">
+                        <span class="product-name">C-Bine (Capecitabine) <span
+                                class="inline-price">₹5,000.00</span></span>
+                        <span class="product-description">
+                            <p></p>
+                            <h1>C-Bine (Capecitabine)</h1>
+                            <p></p>
+                            <h3>Description -</h3>
+                            <p>Capecitabine is an <strong>Antineoplastic &amp; Antimetabolite</strong> chemotherapy
+                                agent.</p>
+                            <p><strong>What&nbsp;Capecitabine is used for </strong>?.... Capecitabine has been used for
+                                the treatment of Anthracycline resistant cases of Metastatic Breast Cancer.</p>
+                            <p><strong>Dose Window....&nbsp; </strong>1250mg/m2 PO BID for 2 weeks q21 days.</p>
+                            <p>1250mg/m2 BID for 2 weeks q21 days plus Docetaxel 75mg/m2 1 Hour IV</p>
+                            <p><strong>Note :</strong> If a drug has been approved for one use Doctors some time elect
+                                to use the same drug for some other problems if they believe it might be
+                                helpful<strong>.</strong></p>
+                            <h3>&nbsp;Colorectal Cancer</h3>
+                            <ul>
+                                <li>
+                                    <p>C-Bine (capecitabine) is indicated as a single agent for adjuvant treatment in
+                                        patients with Dukes' C colon cancer who have undergone complete resection of the
+                                        primary tumor when treatment with fluoropyrimidine therapy alone is preferred.
+                                        Capecitabine was non-inferior to 5-fluorouracil and leucovorin (5-FU/LV) for
+                                        disease-free survival (DFS). Physicians should consider results of combination
+                                        chemotherapy trials, which have shown improvement in DFS and OS,</p>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <p>C-Bine&nbsp;(capecitabine) is indicated as first-line treatment of patients with
+                                        metastatic colorectal carcinoma when treatment with fluoropyrimidine therapy
+                                        alone is preferred. Combination chemotherapy has shown a survival benefit
+                                        compared to 5-FU/LV alone. A survival benefit over 5-FU/LV has not been
+                                        demonstrated with capecitabine monotherapy. Use of capecitabine instead of
+                                        5-FU/LV in combinations has not been adequately studied to assure safety or
+                                        preservation of the survival advantage.</p>
+                                </li>
+                            </ul>
+                            <h3>Breast Cancer</h3>
+                            <ul>
+                                <li>
+                                    <p>C-Bine(capecitabine) in combination with docetaxel is indicated for the treatment
+                                        of patients with metastatic breast cancer after failure of prior
+                                        anthracycline-containing chemotherapy.</p>
+                                </li>
+                                <li>
+                                    <p>Capecitabine monotherapy is also indicated for the treatment of patients with
+                                        metastatic breast cancer resistant to both paclitaxel and an
+                                        anthracycline-containing chemotherapy regimen or resistant to paclitaxel and for
+                                        whom further anthracycline therapy is not indicated (e.g., patients who have
+                                        received cumulative doses of 400 mg/m² of doxorubicin or doxorubicin
+                                        equivalents). Resistance is defined as progressive disease while on treatment,
+                                        with or without an initial response, or relapse within 6 months of completing
+                                        treatment with an anthracycline-containing adjuvant regimen.</p>
+                                </li>
+                            </ul>
+                        </span>
+                        <span class="product-price">₹5,000.00</span>
+
+                        <a href="javascript:hideProductDetailsModal()" class="close">Close</a>
+                        <a href="javascript:Spaces.AddToCart('prod_nPEVlNa23J5a7d');" class="buy-now"><i
+                                class="fa fa-lock" aria-hidden="true"></i> <b>Add to Cart</b></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product" data-product-name="H-NIB (Imatinib Mesylate)" data-product-id="prod_9BAmwJAQz9leXd">
+            <div class="product-details-overlay">
+                <div class="product-contents">
+                    <div class="images ignore">
+                        <div class="hover-overlay">
+                            <a href="javascript:showProductDetailsModal('prod_9BAmwJAQz9leXd')"
+                                class="learn-more">Product Details</a>
+                            <a href="javascript:Spaces.AddToCart('prod_9BAmwJAQz9leXd');" class="buy-now"><i
+                                    class="fa fa-lock" aria-hidden="true"></i> <b>Add to Cart</b></a>
+                        </div>
+                        <img src="https://cdn.chec.io/merchants/44091/assets/UpRuQ9jiz62IQvaP|Imatinib-H-Nib-400.jpg"
+                            class="product-image--main" onerror="this.style.display='none';">
+                        <div class="product-images">
+                            <img src="https://cdn.chec.io/merchants/44091/assets/UpRuQ9jiz62IQvaP|Imatinib-H-Nib-400.jpg"
+                                class="product-image carousel-cell" alt="" onerror="this.style.display='none';">
+                        </div>
+                    </div>
+
+                    <div class="product-info">
+                        <span class="product-name">H-NIB (Imatinib Mesylate) <span
+                                class="inline-price">₹5,000.00</span></span>
+                        <span class="product-description">
+                            <p></p>
+                            <p></p>
+                            <h3>Description -</h3>
+                            <p></p>
+                            <h2><strong>Adding Hope to Life because Hope Matters a lot</strong></h2>
+                            <p></p>
+                            <ul>
+                                <li>
+                                    <p>Imatinib Mesylate is a targeted therapy classified as a signal transduction
+                                        inhibitor, Protein-Tyrosine Kinase Inhibitor.</p>
+                                    <p></p>
+                                </li>
+                            </ul>
+                            <p><strong>What Imatinib Mesylate is used for ?</strong></p>
+                            <p></p>
+                            <ul>
+                                <li>
+                                    <p>matinib Mesylate is a reversible tyrosine kinase inhibitor effective in the
+                                        treatment of Chronic Myelogenous Leukemia 1 ( CML), Gastro Intestinal Stromal
+                                        Tumor (GIST), Eosinophillic Disorders and systemic&nbsp;Mast cell disease.by a
+                                        medical practionar</p>
+                                    <p></p>
+                                </li>
+                            </ul>
+                            <h2><strong>Dose Window ... 400 mg to 600 mg per day or as recommended by a medical
+                                    practionar.</strong></h2>
+                            <p></p>
+                            <h3><strong>Note :<em> </em></strong><em>If a drug has been approved for one use Doctors
+                                    some timee elect to use the same drug for some other problems if they believe it
+                                    might be helpful.</em></h3>
+                        </span>
+                        <span class="product-price">₹5,000.00</span>
+
+                        <a href="javascript:hideProductDetailsModal()" class="close">Close</a>
+                        <a href="javascript:Spaces.AddToCart('prod_9BAmwJAQz9leXd');" class="buy-now"><i
+                                class="fa fa-lock" aria-hidden="true"></i> <b>Add to Cart</b></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product" data-product-name="Livotril 450 mg" data-product-id="prod_mOVKl4amW3wprR">
+            <div class="product-details-overlay">
+                <div class="product-contents">
+                    <div class="images ignore">
+                        <div class="hover-overlay">
+                            <a href="javascript:showProductDetailsModal('prod_mOVKl4amW3wprR')"
+                                class="learn-more">Product Details</a>
+                            <a href="javascript:Spaces.AddToCart('prod_mOVKl4amW3wprR');" class="buy-now"><i
+                                    class="fa fa-lock" aria-hidden="true"></i> <b>Add to Cart</b></a>
+                        </div>
+                        <img src="https://cdn.chec.io/merchants/44091/assets/nDd88XcLOcJZ08hU|Livotrill_Image_new.jpg"
+                            class="product-image--main" onerror="this.style.display='none';">
+                        <div class="product-images">
+                            <img src="https://cdn.chec.io/merchants/44091/assets/nDd88XcLOcJZ08hU|Livotrill_Image_new.jpg"
+                                class="product-image carousel-cell" alt="" onerror="this.style.display='none';">
+                        </div>
+                    </div>
+
+                    <div class="product-info">
+                        <span class="product-name">Livotril 450 mg <span class="inline-price">₹5,000.00</span></span>
+                        <span class="product-description">
+                            <h2>Livotril 450 mg</h2>
+                            <p></p>
+                            <h3>Description -</h3>
+                            <p></p>
+                            <p><strong>LIVOTRILL ( Silibum Marianum)</strong></p>
+                            <p></p>
+                            <p>Milk thistle is an herbal supplement that is proven to have numerous health benefits.
+                                However, it is primarily known for protecting your liver against alcohol, pollutants,
+                                and other toxins, helping to regenerate healthy liver cells and improve your overall
+                                liver function.</p>
+                            <p><strong>Milk thistle is a powerful and safe herb for liver support. Its extract
+                                    (silymarin) boosts detox, lowers inflammation, and increases antioxidant defense,
+                                    which is beneficial for liver and gallbladder issues, diabetes, and autoimmune
+                                    diseases. Read on to learn more, along with dosage information and smart ways to
+                                    improve the poor bioavailability of its active compound silybin</strong></p>
+                            <p>&nbsp;</p>
+                            <p><strong>Liver related conditions indicating the use of milk thistle</strong>&nbsp;are
+                                varied, including, but not limited to:</p>
+                            <p></p>
+                            <ul>
+                                <li>
+                                    <p>Alcoholic cirrhosis</p>
+                                </li>
+                                <li>
+                                    <p>Chronic active hepatitis</p>
+                                </li>
+                                <li>
+                                    <p>Drug and alcohol induced liver damage</p>
+                                </li>
+                                <li>
+                                    <p>Acute viral hepatitis</p>
+                                </li>
+                                <li>
+                                    <p>Fatty liver, nonalcoholic fatty liver disease (NAFLD), and nonalcoholic
+                                        steatohepatitis (NASH)</p>
+                                </li>
+                                <li>
+                                    <p>Fibrosis and Cirrhosis</p>
+                                </li>
+                                <li>
+                                    <p>Hepatic toxicity caused by steroid usage</p>
+                                </li>
+                                <li>
+                                    <p>Environmental sensitivities and toxins</p>
+                                </li>
+                            </ul>
+                        </span>
+                        <span class="product-price">₹5,000.00</span>
+
+                        <a href="javascript:hideProductDetailsModal()" class="close">Close</a>
+                        <a href="javascript:Spaces.AddToCart('prod_mOVKl4amW3wprR');" class="buy-now"><i
+                                class="fa fa-lock" aria-hidden="true"></i> <b>Add to Cart</b></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product" data-product-name="Head Plate-Carbon Fibre" data-product-id="prod_RyWOwmPXz9lnEa">
+            <div class="product-details-overlay">
+                <div class="product-contents">
+                    <div class="images ignore">
+                        <div class="hover-overlay">
+                            <a href="javascript:showProductDetailsModal('prod_RyWOwmPXz9lnEa')"
+                                class="learn-more">Product Details</a>
+                            <a href="javascript:Spaces.AddToCart('prod_RyWOwmPXz9lnEa');" class="buy-now"><i
+                                    class="fa fa-lock" aria-hidden="true"></i> <b>Add to Cart</b></a>
+                        </div>
+                        <img src="https://cdn.chec.io/merchants/44091/assets/vPYM7mbLslaeHlkW|Carbon_fibre_Head_Plate.png"
+                            class="product-image--main" onerror="this.style.display='none';">
+                        <div class="product-images">
+                            <img src="https://cdn.chec.io/merchants/44091/assets/vPYM7mbLslaeHlkW|Carbon_fibre_Head_Plate.png"
+                                class="product-image carousel-cell" alt="" onerror="this.style.display='none';">
+                        </div>
+                    </div>
+
+                    <div class="product-info">
+                        <span class="product-name">Head Plate-Carbon Fibre <span
+                                class="inline-price">₹5,000.00</span></span>
+                        <span class="product-description">
+                            <p></p>
+                            <p>We have mostly all types of Base Plates, to be used in Radiotherapy.</p>
+                            <p>Individual as well as Multi Base Plates as shown in Images below this page.</p>
+                            <p></p>
+                        </span>
+                        <span class="product-price">₹5,000.00</span>
+
+                        <a href="javascript:hideProductDetailsModal()" class="close">Close</a>
+                        <a href="javascript:Spaces.AddToCart('prod_RyWOwmPXz9lnEa');" class="buy-now"><i
+                                class="fa fa-lock" aria-hidden="true"></i> <b>Add to Cart</b></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product" data-product-name="Carbon Fibre Breast and Abdomen and Hip plates"
+            data-product-id="prod_ypbroE9DWno8n4">
+            <div class="product-details-overlay">
+                <div class="product-contents">
+                    <div class="images ignore">
+                        <div class="hover-overlay">
+                            <a href="javascript:showProductDetailsModal('prod_ypbroE9DWno8n4')"
+                                class="learn-more">Product Details</a>
+                            <a href="javascript:Spaces.AddToCart('prod_ypbroE9DWno8n4');" class="buy-now"><i
+                                    class="fa fa-lock" aria-hidden="true"></i> <b>Add to Cart</b></a>
+                        </div>
+                        <img src="https://cdn.chec.io/merchants/44091/assets/ycJYOJHgF4tIIqsc|Carbon_fibre_Multi_Plate.png"
+                            class="product-image--main" onerror="this.style.display='none';">
+                        <div class="product-images">
+                            <img src="https://cdn.chec.io/merchants/44091/assets/ycJYOJHgF4tIIqsc|Carbon_fibre_Multi_Plate.png"
+                                class="product-image carousel-cell" alt="" onerror="this.style.display='none';">
+                        </div>
+                    </div>
+
+                    <div class="product-info">
+                        <span class="product-name">Carbon Fibre Breast and Abdomen and Hip plates <span
+                                class="inline-price">₹5,000.00</span></span>
+                        <span class="product-description">
+                            <h2>Carbon Fibre Breast and Abdomen and Hip plates</h2>
+                        </span>
+                        <span class="product-price">₹5,000.00</span>
+
+                        <a href="javascript:hideProductDetailsModal()" class="close">Close</a>
+                        <a href="javascript:Spaces.AddToCart('prod_ypbroE9DWno8n4');" class="buy-now"><i
+                                class="fa fa-lock" aria-hidden="true"></i> <b>Add to Cart</b></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product" data-product-name="Carbon fiber plates" data-product-id="prod_NqKE50NjWBwdgB">
+            <div class="product-details-overlay">
+                <div class="product-contents">
+                    <div class="images ignore">
+                        <div class="hover-overlay">
+                            <a href="javascript:showProductDetailsModal('prod_NqKE50NjWBwdgB')"
+                                class="learn-more">Product Details</a>
+                            <a href="javascript:Spaces.AddToCart('prod_NqKE50NjWBwdgB');" class="buy-now"><i
+                                    class="fa fa-lock" aria-hidden="true"></i> <b>Add to Cart</b></a>
+                        </div>
+                        <img src="https://cdn.chec.io/merchants/44091/assets/cJdTLJTkh2dg0aKh|Carbon_Fibre_plates.png"
+                            class="product-image--main" onerror="this.style.display='none';">
+                        <div class="product-images">
+                            <img src="https://cdn.chec.io/merchants/44091/assets/cJdTLJTkh2dg0aKh|Carbon_Fibre_plates.png"
+                                class="product-image carousel-cell" alt="" onerror="this.style.display='none';">
+                        </div>
+                    </div>
+
+                    <div class="product-info">
+                        <span class="product-name">Carbon fiber plates <span
+                                class="inline-price">₹5,000.00</span></span>
+                        <span class="product-description">
+                            <h2>Carbon fiber plates</h2>
+                            <p></p>
+                            <h3>Description -</h3>
+                            <p>Carbon Fiber base plates for Different Body Parts</p>
+                        </span>
+                        <span class="product-price">₹5,000.00</span>
+
+                        <a href="javascript:hideProductDetailsModal()" class="close">Close</a>
+                        <a href="javascript:Spaces.AddToCart('prod_NqKE50NjWBwdgB');" class="buy-now"><i
+                                class="fa fa-lock" aria-hidden="true"></i> <b>Add to Cart</b></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product" data-product-name="Fibre ( Transparent ) Base Plate" data-product-id="prod_8XO3wpMa4XoYAz">
+            <div class="product-details-overlay">
+                <div class="product-contents">
+                    <div class="images ignore">
+                        <div class="hover-overlay">
+                            <a href="javascript:showProductDetailsModal('prod_8XO3wpMa4XoYAz')"
+                                class="learn-more">Product Details</a>
+                            <a href="javascript:Spaces.AddToCart('prod_8XO3wpMa4XoYAz');" class="buy-now"><i
+                                    class="fa fa-lock" aria-hidden="true"></i> <b>Add to Cart</b></a>
+                        </div>
+                        <img src="https://cdn.chec.io/merchants/44091/assets/5k7GfjKQijtUdkPl|Catch1.jpg"
+                            class="product-image--main" onerror="this.style.display='none';">
+                        <div class="product-images">
+                            <img src="https://cdn.chec.io/merchants/44091/assets/5k7GfjKQijtUdkPl|Catch1.jpg"
+                                class="product-image carousel-cell" alt="" onerror="this.style.display='none';">
+                        </div>
+                    </div>
+
+                    <div class="product-info">
+                        <span class="product-name">Fibre ( Transparent ) Base Plate <span
+                                class="inline-price">₹5,000.00</span></span>
+                        <span class="product-description">
+                            <h2>Fibre ( Transparent ) Base Plate</h2>
+                            <p></p>
+                            <h3>Description -</h3>
+                            <p>For Head , Neck and shoulder</p>
+                        </span>
+                        <span class="product-price">₹5,000.00</span>
+
+                        <a href="javascript:hideProductDetailsModal()" class="close">Close</a>
+                        <a href="javascript:Spaces.AddToCart('prod_8XO3wpMa4XoYAz');" class="buy-now"><i
+                                class="fa fa-lock" aria-hidden="true"></i> <b>Add to Cart</b></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product" data-product-name="AOI Base Plates" data-product-id="prod_A12JwrMVE8lPjn">
+            <div class="product-details-overlay">
+                <div class="product-contents">
+                    <div class="images ignore">
+                        <div class="hover-overlay">
+                            <a href="javascript:showProductDetailsModal('prod_A12JwrMVE8lPjn')"
+                                class="learn-more">Product Details</a>
+                            <a href="javascript:Spaces.AddToCart('prod_A12JwrMVE8lPjn');" class="buy-now"><i
+                                    class="fa fa-lock" aria-hidden="true"></i> <b>Add to Cart</b></a>
+                        </div>
+                        <img src="https://cdn.chec.io/merchants/44091/assets/GcJegZGgJg03xrlE|AIO_Baseplate_picture_with_accessory-Humo_Healthcare.jpg"
+                            class="product-image--main" onerror="this.style.display='none';">
+                        <div class="product-images">
+                            <img src="https://cdn.chec.io/merchants/44091/assets/GcJegZGgJg03xrlE|AIO_Baseplate_picture_with_accessory-Humo_Healthcare.jpg"
+                                class="product-image carousel-cell" alt="" onerror="this.style.display='none';">
+                        </div>
+                    </div>
+
+                    <div class="product-info">
+                        <span class="product-name">AOI Base Plates <span class="inline-price">₹5,000.00</span></span>
+                        <span class="product-description">
+                            <p></p>
+                            <h2>AOI Base Plates</h2>
+                            <p></p>
+                            <h3>Description -</h3>
+                            <p>All in one Carbon Fiber Base Plates.</p>
+                        </span>
+                        <span class="product-price">₹5,000.00</span>
+
+                        <a href="javascript:hideProductDetailsModal()" class="close">Close</a>
+                        <a href="javascript:Spaces.AddToCart('prod_A12JwrMVE8lPjn');" class="buy-now"><i
+                                class="fa fa-lock" aria-hidden="true"></i> <b>Add to Cart</b></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product" data-product-name="Immobilised Radiotherapy Thermoplastic sheets- Pin Type"
+            data-product-id="prod_RyWOwmPXzWlnEa">
+            <div class="product-details-overlay">
+                <div class="product-contents">
+                    <div class="images ignore">
+                        <div class="hover-overlay">
+                            <a href="javascript:showProductDetailsModal('prod_RyWOwmPXzWlnEa')"
+                                class="learn-more">Product Details</a>
+                            <a href="javascript:Spaces.AddToCart('prod_RyWOwmPXzWlnEa');" class="buy-now"><i
+                                    class="fa fa-lock" aria-hidden="true"></i> <b>Add to Cart</b></a>
+                        </div>
+                        <img src="https://cdn.chec.io/merchants/44091/assets/2GElonXa4cYGNmiv|pin type head cast.jpg"
+                            class="product-image--main" onerror="this.style.display='none';">
+                        <div class="product-images">
+                            <img src="https://cdn.chec.io/merchants/44091/assets/2GElonXa4cYGNmiv|pin type head cast.jpg"
+                                class="product-image carousel-cell" alt="" onerror="this.style.display='none';">
+                        </div>
+                    </div>
+
+                    <div class="product-info">
+                        <span class="product-name">Immobilised Radiotherapy Thermoplastic sheets- Pin Type <span
+                                class="inline-price">₹5,000.00</span></span>
+                        <span class="product-description">
+                            <h1><strong>Pin type Head cast</strong></h1>
+                            <p></p>
+                            <h3>Description -</h3>
+                        </span>
+                        <span class="product-price">₹5,000.00</span>
+
+                        <a href="javascript:hideProductDetailsModal()" class="close">Close</a>
+                        <a href="javascript:Spaces.AddToCart('prod_RyWOwmPXzWlnEa');" class="buy-now"><i
+                                class="fa fa-lock" aria-hidden="true"></i> <b>Add to Cart</b></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product" data-product-name="Pin Type Neck &amp; Shoulder Cast"
+            data-product-id="prod_ypbroE9DWVo8n4">
+            <div class="product-details-overlay">
+                <div class="product-contents">
+                    <div class="images ignore">
+                        <div class="hover-overlay">
+                            <a href="javascript:showProductDetailsModal('prod_ypbroE9DWVo8n4')"
+                                class="learn-more">Product Details</a>
+                            <a href="javascript:Spaces.AddToCart('prod_ypbroE9DWVo8n4');" class="buy-now"><i
+                                    class="fa fa-lock" aria-hidden="true"></i> <b>Add to Cart</b></a>
+                        </div>
+                        <img src="https://cdn.chec.io/merchants/44091/assets/IUHgn4d2L5YGTMIG|Pin Type Neck &amp; Shoulder Cast.jpg"
+                            class="product-image--main" onerror="this.style.display='none';">
+                        <div class="product-images">
+                            <img src="https://cdn.chec.io/merchants/44091/assets/IUHgn4d2L5YGTMIG|Pin Type Neck &amp; Shoulder Cast.jpg"
+                                class="product-image carousel-cell" alt="" onerror="this.style.display='none';">
+                        </div>
+                    </div>
+
+                    <div class="product-info">
+                        <span class="product-name">Pin Type Neck &amp; Shoulder Cast <span
+                                class="inline-price">₹5,000.00</span></span>
+                        <span class="product-description">
+                            <h2>Pin Type Neck &amp; Shoulder Cast</h2>
+                            <p></p>
+                            <h3>Description -</h3>
+                        </span>
+                        <span class="product-price">₹5,000.00</span>
+
+                        <a href="javascript:hideProductDetailsModal()" class="close">Close</a>
+                        <a href="javascript:Spaces.AddToCart('prod_ypbroE9DWVo8n4');" class="buy-now"><i
+                                class="fa fa-lock" aria-hidden="true"></i> <b>Add to Cart</b></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product" data-product-name="Pin Type Head, Neck &amp; Shoulder"
+            data-product-id="prod_Kvg9l616Wd51bB">
+            <div class="product-details-overlay">
+                <div class="product-contents">
+                    <div class="images ignore">
+                        <div class="hover-overlay">
+                            <a href="javascript:showProductDetailsModal('prod_Kvg9l616Wd51bB')"
+                                class="learn-more">Product Details</a>
+                            <a href="javascript:Spaces.AddToCart('prod_Kvg9l616Wd51bB');" class="buy-now"><i
+                                    class="fa fa-lock" aria-hidden="true"></i> <b>Add to Cart</b></a>
+                        </div>
+                        <img src="https://cdn.chec.io/merchants/44091/assets/Xq7msC76Sq4zY7es|Pin Type Head, Neck &amp; Shoulder.jpg"
+                            class="product-image--main" onerror="this.style.display='none';">
+                        <div class="product-images">
+                            <img src="https://cdn.chec.io/merchants/44091/assets/Xq7msC76Sq4zY7es|Pin Type Head, Neck &amp; Shoulder.jpg"
+                                class="product-image carousel-cell" alt="" onerror="this.style.display='none';">
+                        </div>
+                    </div>
+
+                    <div class="product-info">
+                        <span class="product-name">Pin Type Head, Neck &amp; Shoulder <span
+                                class="inline-price">₹5,000.00</span></span>
+                        <span class="product-description">
+                            <h2>Pin Type Head, Neck &amp; Shoulder</h2>
+                            <p></p>
+                            <h3>Description -</h3>
+                        </span>
+                        <span class="product-price">₹5,000.00</span>
+
+                        <a href="javascript:hideProductDetailsModal()" class="close">Close</a>
+                        <a href="javascript:Spaces.AddToCart('prod_Kvg9l616Wd51bB');" class="buy-now"><i
+                                class="fa fa-lock" aria-hidden="true"></i> <b>Add to Cart</b></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product" data-product-name="Pin Type Hip &amp; Pelvis- 6 Clamp"
+            data-product-id="prod_NqKE50NjWjwdgB">
+            <div class="product-details-overlay">
+                <div class="product-contents">
+                    <div class="images ignore">
+                        <div class="hover-overlay">
+                            <a href="javascript:showProductDetailsModal('prod_NqKE50NjWjwdgB')"
+                                class="learn-more">Product Details</a>
+                            <a href="javascript:Spaces.AddToCart('prod_NqKE50NjWjwdgB');" class="buy-now"><i
+                                    class="fa fa-lock" aria-hidden="true"></i> <b>Add to Cart</b></a>
+                        </div>
+                        <img src="https://cdn.chec.io/merchants/44091/assets/tciZn6OpWvFjkcua|Pin Type Hip &amp; Pelvis- 6 Clamp.jpg"
+                            class="product-image--main" onerror="this.style.display='none';">
+                        <div class="product-images">
+                            <img src="https://cdn.chec.io/merchants/44091/assets/tciZn6OpWvFjkcua|Pin Type Hip &amp; Pelvis- 6 Clamp.jpg"
+                                class="product-image carousel-cell" alt="" onerror="this.style.display='none';">
+                        </div>
+                    </div>
+
+                    <div class="product-info">
+                        <span class="product-name">Pin Type Hip &amp; Pelvis- 6 Clamp <span
+                                class="inline-price">₹5,000.00</span></span>
+                        <span class="product-description">
+                            <h2>Pin Type Hip &amp; Pelvis- 6 Clamp</h2>
+                            <p></p>
+                            <h3>Description -</h3>
+                        </span>
+                        <span class="product-price">₹5,000.00</span>
+
+                        <a href="javascript:hideProductDetailsModal()" class="close">Close</a>
+                        <a href="javascript:Spaces.AddToCart('prod_NqKE50NjWjwdgB');" class="buy-now"><i
+                                class="fa fa-lock" aria-hidden="true"></i> <b>Add to Cart</b></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product" data-product-name="Pin Type- Thorax 4 Point" data-product-id="prod_kpnNwA1vWNwmXB">
+            <div class="product-details-overlay">
+                <div class="product-contents">
+                    <div class="images ignore">
+                        <div class="hover-overlay">
+                            <a href="javascript:showProductDetailsModal('prod_kpnNwA1vWNwmXB')"
+                                class="learn-more">Product Details</a>
+                            <a href="javascript:Spaces.AddToCart('prod_kpnNwA1vWNwmXB');" class="buy-now"><i
+                                    class="fa fa-lock" aria-hidden="true"></i> <b>Add to Cart</b></a>
+                        </div>
+                        <img src="https://cdn.chec.io/merchants/44091/assets/x2T2sMCiNSstq2Gh|Pin Type- Thorax 4 Point.jpg"
+                            class="product-image--main" onerror="this.style.display='none';">
+                        <div class="product-images">
+                            <img src="https://cdn.chec.io/merchants/44091/assets/x2T2sMCiNSstq2Gh|Pin Type- Thorax 4 Point.jpg"
+                                class="product-image carousel-cell" alt="" onerror="this.style.display='none';">
+                        </div>
+                    </div>
+
+                    <div class="product-info">
+                        <span class="product-name">Pin Type- Thorax 4 Point <span
+                                class="inline-price">₹5,000.00</span></span>
+                        <span class="product-description">
+                            <h2>Pin Type- Thorax 4 Point</h2>
+                            <p></p>
+                            <h3>Description -</h3>
+                        </span>
+                        <span class="product-price">₹5,000.00</span>
+
+                        <a href="javascript:hideProductDetailsModal()" class="close">Close</a>
+                        <a href="javascript:Spaces.AddToCart('prod_kpnNwA1vWNwmXB');" class="buy-now"><i
+                                class="fa fa-lock" aria-hidden="true"></i> <b>Add to Cart</b></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product" data-product-name="Pin Type 2 Point Breast Cast" data-product-id="prod_8XO3wpMa4NoYAz">
+            <div class="product-details-overlay">
+                <div class="product-contents">
+                    <div class="images ignore">
+                        <div class="hover-overlay">
+                            <a href="javascript:showProductDetailsModal('prod_8XO3wpMa4NoYAz')"
+                                class="learn-more">Product Details</a>
+                            <a href="javascript:Spaces.AddToCart('prod_8XO3wpMa4NoYAz');" class="buy-now"><i
+                                    class="fa fa-lock" aria-hidden="true"></i> <b>Add to Cart</b></a>
+                        </div>
+                        <img src="https://cdn.chec.io/merchants/44091/assets/JNi61cebGI7y928L|Pin Type 2 Point Breast Cast.jpg"
+                            class="product-image--main" onerror="this.style.display='none';">
+                        <div class="product-images">
+                            <img src="https://cdn.chec.io/merchants/44091/assets/JNi61cebGI7y928L|Pin Type 2 Point Breast Cast.jpg"
+                                class="product-image carousel-cell" alt="" onerror="this.style.display='none';">
+                        </div>
+                    </div>
+
+                    <div class="product-info">
+                        <span class="product-name">Pin Type 2 Point Breast Cast <span
+                                class="inline-price">₹5,000.00</span></span>
+                        <span class="product-description">
+                            <h2>Pin Type 2 Point Breast Cast</h2>
+                            <p></p>
+                            <h3>Description -</h3>
+                        </span>
+                        <span class="product-price">₹5,000.00</span>
+
+                        <a href="javascript:hideProductDetailsModal()" class="close">Close</a>
+                        <a href="javascript:Spaces.AddToCart('prod_8XO3wpMa4NoYAz');" class="buy-now"><i
+                                class="fa fa-lock" aria-hidden="true"></i> <b>Add to Cart</b></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product" data-product-name="PLEXI TRANSPARENT HEAD RESTS" data-product-id="prod_bO6J5aBNDPlEjp">
+            <div class="product-details-overlay">
+                <div class="product-contents">
+                    <div class="images ignore">
+                        <div class="hover-overlay">
+                            <a href="javascript:showProductDetailsModal('prod_bO6J5aBNDPlEjp')"
+                                class="learn-more">Product Details</a>
+                            <a href="javascript:Spaces.AddToCart('prod_bO6J5aBNDPlEjp');" class="buy-now"><i
+                                    class="fa fa-lock" aria-hidden="true"></i> <b>Add to Cart</b></a>
+                        </div>
+                        <img src="https://cdn.chec.io/merchants/44091/assets/fZ3ir2wqcPCOtPeh|Plexi_Head_Rests.jpg"
+                            class="product-image--main" onerror="this.style.display='none';">
+                        <div class="product-images">
+                            <img src="https://cdn.chec.io/merchants/44091/assets/fZ3ir2wqcPCOtPeh|Plexi_Head_Rests.jpg"
+                                class="product-image carousel-cell" alt="" onerror="this.style.display='none';">
+                        </div>
+                    </div>
+
+                    <div class="product-info">
+                        <span class="product-name">PLEXI TRANSPARENT HEAD RESTS <span
+                                class="inline-price">₹5,000.00</span></span>
+                        <span class="product-description">
+                            <h2>PLEXI TRANSPARENT HEAD RESTS</h2>
+                            <p></p>
+                            <h3>Description -</h3>
+                            <p>Plexi Head Rests</p>
+                        </span>
+                        <span class="product-price">₹5,000.00</span>
+
+                        <a href="javascript:hideProductDetailsModal()" class="close">Close</a>
+                        <a href="javascript:Spaces.AddToCart('prod_bO6J5aBNDPlEjp');" class="buy-now"><i
+                                class="fa fa-lock" aria-hidden="true"></i> <b>Add to Cart</b></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product" data-product-name="Foam Head Rests" data-product-id="prod_A12JwrMVEdlPjn">
+            <div class="product-details-overlay">
+                <div class="product-contents">
+                    <div class="images ignore">
+                        <div class="hover-overlay">
+                            <a href="javascript:showProductDetailsModal('prod_A12JwrMVEdlPjn')"
+                                class="learn-more">Product Details</a>
+                            <a href="javascript:Spaces.AddToCart('prod_A12JwrMVEdlPjn');" class="buy-now"><i
+                                    class="fa fa-lock" aria-hidden="true"></i> <b>Add to Cart</b></a>
+                        </div>
+                        <img src="https://cdn.chec.io/merchants/44091/assets/QsqqaoIh2qhuzOj0|Foam_Head_Rests.jpg"
+                            class="product-image--main" onerror="this.style.display='none';">
+                        <div class="product-images">
+                            <img src="https://cdn.chec.io/merchants/44091/assets/QsqqaoIh2qhuzOj0|Foam_Head_Rests.jpg"
+                                class="product-image carousel-cell" alt="" onerror="this.style.display='none';">
+                        </div>
+                    </div>
+
+                    <div class="product-info">
+                        <span class="product-name">Foam Head Rests <span class="inline-price">₹5,000.00</span></span>
+                        <span class="product-description">
+                            <h2>Foam Head Rests</h2>
+                            <p></p>
+                            <h3>Description -</h3>
+                            <p>These are made of POLYURETHANE</p>
+                        </span>
+                        <span class="product-price">₹5,000.00</span>
+
+                        <a href="javascript:hideProductDetailsModal()" class="close">Close</a>
+                        <a href="javascript:Spaces.AddToCart('prod_A12JwrMVEdlPjn');" class="buy-now"><i
+                                class="fa fa-lock" aria-hidden="true"></i> <b>Add to Cart</b></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product" data-product-name="Mopner ( Mouth Opener )-Plane Steel"
+            data-product-id="prod_0YnEoqvrRB5e7P">
+            <div class="product-details-overlay">
+                <div class="product-contents">
+                    <div class="images ignore">
+                        <div class="hover-overlay">
+                            <a href="javascript:showProductDetailsModal('prod_0YnEoqvrRB5e7P')"
+                                class="learn-more">Product Details</a>
+                            <a href="javascript:Spaces.AddToCart('prod_0YnEoqvrRB5e7P');" class="buy-now"><i
+                                    class="fa fa-lock" aria-hidden="true"></i> <b>Add to Cart</b></a>
+                        </div>
+                        <img src="https://cdn.chec.io/merchants/44091/assets/gGHMFoLDjT6NxohP|Steel_Plane.jpg"
+                            class="product-image--main" onerror="this.style.display='none';">
+                        <div class="product-images">
+                            <img src="https://cdn.chec.io/merchants/44091/assets/gGHMFoLDjT6NxohP|Steel_Plane.jpg"
+                                class="product-image carousel-cell" alt="" onerror="this.style.display='none';">
+                        </div>
+                    </div>
+
+                    <div class="product-info">
+                        <span class="product-name">Mopner ( Mouth Opener )-Plane Steel <span
+                                class="inline-price">₹5,000.00</span></span>
+                        <span class="product-description">
+                            <h2>Mopner ( Mouth Opener )-Plane Steel</h2>
+                            <p></p>
+                            <h3>Description -</h3>
+                            <p>This Mouth Opener is made of pure stain less steel for medical use by the medical
+                                practioner or patients after the advice of the Medical specialist only, as this
+                                instrument creates a heavy pressure on the teeth , so should be use till the tolerance
+                                limit or as adviced by the medical specialist only</p>
+                            <p>Heavy pressure by the instrument may lead to the breakage of Teeth in full or partially
+                            </p>
+                            <p>After use Patients are requested to clean the instrument with warm water or any type of
+                                sanitizer.</p>
+                            <p>Instrument should be kept in a place so that germs, dust and any such other contacts with
+                                the instrument should not be their.</p>
+                        </span>
+                        <span class="product-price">₹5,000.00</span>
+
+                        <a href="javascript:hideProductDetailsModal()" class="close">Close</a>
+                        <a href="javascript:Spaces.AddToCart('prod_0YnEoqvrRB5e7P');" class="buy-now"><i
+                                class="fa fa-lock" aria-hidden="true"></i> <b>Add to Cart</b></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="powered-by-chec">
+            <a href="https://chec.io" target="blank" alt="Chec - Sell anything, anywhere.">
+                <img src="/images.beta/powered.by.dark.png" class="light" width="182">
+            </a>
+        </div>
+
+        <div class="copyright">
+            © Copyright 2022 Humo Health Care &amp; Chec (Chec Platform, Inc).
+            <br>All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        var CommercejsSpace = new Commerce('chec_eyJpdiI6InlWa05vM2ppUGZsNDNNZUU4NUIyeWc9PSIsInZhbHVlIjoiL0gxN28yOWdyT0diU2pKbUFJWFNadU84T3VpVjdudlV6dVhqcHhmMTNsdVdtb2Z2dUgyZ2lzU1A0TEJIcTlLeG9FTHVFNzBlQXVHWFFOTk5IdlI3VFRIYWQvRkJzd0dTeE8wZmxOYUcwaXVFWWZxQnpoOW14MUhJRE5teE5WZEJwS1NJMUh6RDdQR2NrbTJzNC9mMVdnPT0iLCJtYWMiOiIxZjUwMDE3N2E4ZTVlNTRiOTMzZDUzN2I3OTU3NmE1MjczMWRkNDE1OGYxMjBkYjExZjk0MzNkYjYzZDg1ZWUyIiwidGFnIjoiIn0=', false, {
+            url: 'https://api.chec.io',
+            axiosConfig: {
+                headers: {
+                    'Chec-Version': '2020-08-26',
+                },
+            },
+        });
+        CommercejsSpace.cart.retrieve().then(function (data) {
+            Spaces.cartUpdate(data);
+        });
+
+        $(document).ready(function () {
+            $('.product-details-overlay').on('click', function (el) {
+                if ($(el.target).hasClass('product-details-overlay')) {
+                    hideProductDetailsModal();
+                }
+            });
+
+            $('#search').hideseek({
+                list: '.hideseek-data',
+                nodata: 'No products found',
+                attribute: 'text',
+                highlight: false,
+                ignore: 'ignore',
+                navigation: false,
+                ignore_accents: false,
+                hidden_mode: false
+            });
+        });
+
+        $('.hover-overlay').on("touchstart", function (e) {
+            "use strict"; //satisfy the code inspectors
+            var link = $(this); //preselect the link
+            if (link.hasClass('hover')) {
+                return true;
+            } else {
+                link.addClass("hover");
+                $('.hover-overlay').not(this).removeClass("hover");
+                e.preventDefault();
+                return false; //extra, and to make sure the function has consistent return points
+            }
+        });
+
+        function cartShow() {
+            $('#shopping-cart #cart-active-overlay ').show();
+            $('#shopping-cart #cart-overview').removeClass('inactive');
+        }
+
+        function cartHide() {
+            $('#shopping-cart #cart-overview').addClass('inactive');
+            $('#shopping-cart #cart-active-overlay ').hide();
+        }
+
+        function showProductDetailsModal(id) {
+            $('.product[data-product-id=' + id + ']').addClass('details-modal');
+            $('body').addClass('no-scroll');
+
+            $('.product[data-product-id=' + id + '] .product-image--main').hide();
+            $('.product[data-product-id=' + id + '] .product-images')
+                .flickity({
+                    cellAlign: 'center',
+                    adaptiveHeight: true,
+                    wrapAround: true,
+                });
+        }
+
+        function hideProductDetailsModal() {
+            $('.product').removeClass('details-modal');
+            $('body').removeClass('no-scroll');
+            $('.product-image--main').show();
+        }
+    </script>
+
+
+    <iframe name="__privateStripeMetricsController9510" allowtransparency="true" scrolling="no"
+        src="https://js.stripe.com/v3/m-outer-6262077c14f753400d607dc30e70f1af.html#url=https%3A%2F%2Fspaces.chec.io%2F44091&amp;title=Humo%20Health%20Care%20-%20Spaces%20by%20Chec&amp;referrer=https%3A%2F%2Fspaces.chec.io%2F44091%3Fcategory_slug%3Dbreast-prosthesis-an-alternative-to-reconstruction&amp;muid=6a5c1df6-80a0-4402-b5ce-118b2be00364431d47&amp;sid=1a4e0e29-facb-4d49-ab2a-95435d2f9a17f8dd29&amp;version=6&amp;preview=false"
+        aria-hidden="true" tabindex="-1"
+        style="border: medium none !important; margin: 0px !important; padding: 0px !important; width: 1px !important; min-width: 100% !important; overflow: hidden !important; display: block !important; visibility: hidden !important; position: fixed !important; height: 1px !important; pointer-events: none !important; user-select: none !important;"
+        frameborder="0"></iframe>
+</body>
+</html>
